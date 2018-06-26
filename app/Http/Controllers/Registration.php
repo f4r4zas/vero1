@@ -139,6 +139,7 @@ class Registration extends Controller
             $result['password']  = Hash::make($result['password']);
             //$result = $collection->insertOne(array("_id"=>new \MongoDB\BSON\ObjectId($insertId),$request));
             $request["_id"] = $insertId;
+            $request["email"] = $request->input("userEmail");
             $result = $collection->insertOne($result);
             Session::put("register-id",$result->getInsertedId());
             return redirect(URL::to("/driver-register/2"));
@@ -207,6 +208,9 @@ class Registration extends Controller
         );
 
         $result = $collection->updateOne(array("_id"=>new \MongoDB\BSON\ObjectId($id)),array('$set' => $pics));
+
+        Session::flash('message', 'Registration successful!');
+        return redirect(URL::to("/login"));
 
     }
 }

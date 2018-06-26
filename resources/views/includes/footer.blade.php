@@ -5,8 +5,8 @@
                 <h4>vero 1</h4>
                 <ul>
                     <li><a href="#">Coverage area</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Log in</a></li>
+                    <li><a href="{{ URL::to("/driver-register") }}">Sign up</a></li>
+                    <li><a href="{{ URL::to("/login") }}">Log in</a></li>
                     <li><a href="#">Magazine</a></li>
                 </ul>
             </div>

@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-sm-2">
                     <div class="login-wrap">
-                        <a href="">login</a>
+                        <a href="{{ URL::to("/login") }}">login</a>
                     </div>
                 </div>
             </div><!--row-->
@@ -105,7 +105,7 @@
                         <div class="spacer form-group col-md-6 ">
                             <span>Password</span>
                             <input type="password" id="main_password" name="password" required>
-                            <span class="custom.help-block">Password should contain aleast 1 Capital | 1 Special Character .</span>
+                            <span class="custom help-block">Password should contain aleast 1 Capital | 1 Special Character .</span>
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Confirm Password</span>
@@ -229,7 +229,7 @@
                     </div>
                     <div class="form-group form-row" style="<?php if($everFelony == "No"){echo 'display:none';} ?>" id="ans-everFelony">
                         <span>Provide Details</span>
-                        <input placeholder="provide details" type="text" value="{{ @$form_data['question']['everFel'] }}" name="question[everFelony]">
+                        <input placeholder="provide details" type="text" value="{{ @$form_data['question']['everFelony'] }}" name="question[everFelony]">
                     </div>
                     <div class="form-group form-row">
                         <span>Have you ever been convicted of a DUI and/or reckless driving?</span>
@@ -245,6 +245,7 @@
 
 
                     </div>
+
                     <div class="form-group form-row" id="ans-conviction" style="<?php if($conviction == "No"){echo 'display:none';} ?>">
                         <span>Provide Details</span>
                         <input placeholder="provide details" type="text" value="{{ @$form_data['question']['conviction'] }}" name="question[conviction]">
