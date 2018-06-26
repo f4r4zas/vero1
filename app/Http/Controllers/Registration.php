@@ -108,7 +108,7 @@ class Registration extends Controller
         $collection = $client->vero->user;
 
 
-        $find = array('email'=>$request->input("userEmail"));
+        $find = array('userEmail'=>$request->input("userEmail"));
         $unique =  $collection->findOne($find);
 
         Session::put("register-form-1",$request->all());
@@ -133,14 +133,12 @@ class Registration extends Controller
             return redirect(URL::to("/driver-register"));
         }
 
-      // $insertId = $this->apiRegister($param);
        $insertId = $this->apiRegister($param);
-        //$insertId = 1;
         if($insertId){
             $result = $request->all();
             $result['password']  = Hash::make($result['password']);
             //$result = $collection->insertOne(array("_id"=>new \MongoDB\BSON\ObjectId($insertId),$request));
-            $result["_id"] = $insertId;
+            $result["_id"] =  new \MongoDB\BSON\ObjectId($insertId);
             $result["email"] = $request->input("userEmail");
             $result = $collection->insertOne($result);
             Session::put("register-id",$result->getInsertedId());
