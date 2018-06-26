@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-sm-2">
                     <div class="login-wrap">
-                        <a href="">login</a>
+                        <a href="{{ URL::to("/login") }}">login</a>
                     </div>
                 </div>
             </div><!--row-->
