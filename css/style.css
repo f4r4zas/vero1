@@ -1572,3 +1572,53 @@ label.error {
 	color: red;
 	font-style: italic;
 }
+
+.vero-btn {
+	padding: 10px 65px;
+	margin: 0;
+	border: 2px solid #ff9200;
+	border-radius: 50px;
+	color: #f6f4f5;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: black;
+}
+.vero-btn:hover{
+	border: 2px solid #ff9200;
+	background-color: #ff9200;
+}
+
+.vero-field{
+	padding: 0 50px 0 20px;
+	margin: 0;
+	border: 2px solid #ff9200;
+	border-radius: 25px;
+	background: none;
+	width: 380px;
+	height: 55px;
+	color: #000;;
+	font-size: 14px;
+}
+
+.navbar-laravel{
+	background: #0f0f0e;
+	padding: 25px 3%;
+}
+
+.vero-link{
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ff9200;
+}
+.login label{
+	margin: 0;
+	font-size: 14px;
+	font-weight: 800;
+}
+a#navbarDropdown {
+	color: white;
+}
