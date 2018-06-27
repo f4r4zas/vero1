@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Vero - Home</title>
+    <title>Vero1</title>
     <link rel="stylesheet" href="{{ URL::to("css/style.css") }}" />
     <link rel="stylesheet" href="{{ URL::to("css/bootstrap.css") }}" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
@@ -28,5 +28,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <link rel="shortcut icon" href="{{ URL::to("favicon/favicon.ico") }}" type="image/x-icon">
+    <link rel="icon" href="{{ URL::to("favicon/favicon.ico") }}" type="image/x-icon">
+
 </head>
 <body>

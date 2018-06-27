@@ -13,6 +13,7 @@
             <div class="col-sm-3 footer-colum">
                 <h4>about vero 1</h4>
                 <ul>
+                    <li><a href="{{ URL::to("/faq") }}">F.A.Q</a></li>
                     <li><a href="#">T&C</a></li>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">About us</a></li>

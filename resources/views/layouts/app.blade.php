@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Vero1') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -23,13 +23,16 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{{ URL::to("favicon/favicon.ico") }}" type="image/x-icon">
+    <link rel="icon" href="{{ URL::to("favicon/favicon.ico") }}" type="image/x-icon">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <a href=""><img src="{{ URL::to("images/ver-logo.png") }}"></a>
+                    <a href="{{ URL::to("/") }}"><img src="{{ URL::to("images/ver-logo.png") }}"></a>
                     {{--{{ config('app.name', 'Laravel') }}--}}
                 </a>
 
