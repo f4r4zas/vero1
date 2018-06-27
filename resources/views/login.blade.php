@@ -1,4 +1,4 @@
-@include("includes/header")
+
 
 <div class="container">
     <!-- HTML Form (wrapped in a .bootstrap-iso div) -->

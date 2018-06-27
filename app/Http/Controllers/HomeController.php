@@ -25,4 +25,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function faq(){
+        return view('faq');
+    }
+
+    public function how(){
+        return view('how_it_work');
+    }
 }

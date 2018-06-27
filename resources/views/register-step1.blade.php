@@ -22,7 +22,7 @@
                                 <div class="collapse navbar-collapse navbarCollapse">
                                     <ul>
                                         <li><a href="#">Overview</a></li>
-                                        <li><a href="#">How it works</a></li>
+                                        <li><a href="{{ URL::to("/how-it-works") }}">How it works</a></li>
                                         <li><a href="#">Pricing</a></li>
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Services</a></li>
