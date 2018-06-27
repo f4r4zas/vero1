@@ -48,3 +48,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/faq', 'Common@faq')->name('home');
+Route::get('/how-it-works', 'Common@how')->name('home');
