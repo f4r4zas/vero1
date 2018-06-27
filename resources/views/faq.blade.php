@@ -1,5 +1,5 @@
-@include("includes.full_header")
 @include("includes.header")
+@include("includes.full_header")
 <div class="body-content">
     <div class="container">
         <div class="col-sm-12">
