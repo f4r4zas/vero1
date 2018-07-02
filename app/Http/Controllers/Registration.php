@@ -145,7 +145,8 @@ class Registration extends Controller
             return redirect(URL::to("/driver-register/2"));
 
         }else{
-            echo "Something is wrong";
+            Session::flash('message', 'Email already registered!');
+            return redirect(URL::to("/driver-register"));
         }
 
     }
@@ -173,7 +174,6 @@ class Registration extends Controller
 
     public function registrationStep3(Request $request){
 
-
        // $id = Session::get("register-id");
         $id = "5b05d7a456c7c72a8000126a";
 
@@ -181,8 +181,6 @@ class Registration extends Controller
         $carInsurance = $request->file("pic")["car_insurance"];
         $passport = $request->file("pic")["passport"];
         $profile = $request->file("pic")["profile"];
-
-
 
         //Move Uploaded File
         $destinationPath = 'uploads';
@@ -209,6 +207,7 @@ class Registration extends Controller
 
         $result = $collection->updateOne(array("_id"=>new \MongoDB\BSON\ObjectId($id)),array('$set' => $pics));
 
+        Session::forget(["register-form-1","register-form-2"]);
         Session::flash('message', 'Registration successful!');
         return redirect(URL::to("/login"));
 
