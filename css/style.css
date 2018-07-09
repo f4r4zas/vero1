@@ -52,7 +52,7 @@ a:hover{
 }
 .top-nav-bg {
 	background: #0f0f0e;
-	padding: 25px 3%;
+	padding: 42px 3%;
 }
 .top-nav {
 	padding: 0;
@@ -66,6 +66,30 @@ a:hover{
 	list-style: none;
 	line-height: 40px;
 	margin-left: 20px;
+}
+.vero-btn1{
+	padding: 10px 21px;
+	margin: 0;
+	border: 2px solid #ff9200;
+	border-radius: 50px;
+	color: #f6f4f5;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: black;
+}
+.vero-btn {
+	border: 2px solid #ff9200;
+	background-color: #ff9200 !important;
+}
+.vero-btn1 {
+	border: 2px solid #ff9200;
+	background-color: #ff9200 !important;
+}
+.vero-btn1:hover {
+	border: 2px solid #ff9200;
+	background-color: #ff9200 !important;
 }
 .top-nav li {
 	margin: 0;
@@ -131,7 +155,7 @@ a:hover{
 	font-weight: 500;
 	/* line-height: 218px; */
 	text-transform: uppercase;
-	padding: 62px 0% 80px 0%;
+	padding: 15px 0% 80px 0%;
 }
 .home-banner-wrap{
 	padding:0;
@@ -173,10 +197,10 @@ a:hover{
 	height: 23px;
 	background: url(../images/map-marker-ico.png) no-repeat left;
 	width: 15px;
-	position: absolute;
-	/* left: 0; */
-	right: 386px;
-	top: 154px;
+	position: relative;
+	/* left: 2%; */
+	/* top: 154px; */
+	left: -26px;
 }
 /*index*/
 .block-row-1 {
@@ -845,10 +869,10 @@ a:hover{
 	.home-banner-wrap {
 		margin: 95px 0 0 0;
 	}
-	.location {
-		right: 299px;
-		top: 178px;
-	}
+.location {
+	right: 34%;
+	top: 7px;
+}
 	.body-content {
 		padding: 0px;
 	}
@@ -928,10 +952,10 @@ a:hover{
 	.home-banner-wrap .banner-opt p {
 		width: 71%;
 	}
-	.location {
-		right: 177px;
-		top: 129px;
-	}
+.location {
+	right: 29%;
+	top: 7px;
+}
 	.block-row-1 {
 		padding: 0;
 		margin: 0;
@@ -1047,7 +1071,7 @@ a:hover{
 	}
 	.location {
 		right: 80px !important;
-		top: 212px !important;
+		
 	}
 .top-nav ul {
 	padding: 0px 0 0 0;
@@ -1293,8 +1317,8 @@ a:hover{
 		width: 265px;
 	}
 	.location {
-		right: 155px !important;
-		top: 133px !important;
+		
+		
 	}
 	.block-row-1 {
 		height: 630px;
@@ -1415,7 +1439,7 @@ a:hover{
 @media (max-width:441px){
 	.location {
 		right: 87px !important;
-		top: 197px !important;
+		
 	}
 	.block-row-1 {
 		height: 575px;
@@ -1509,7 +1533,7 @@ a:hover{
 }
 @media (max-width:390px){
 	.location {
-		display: none;
+		/*display: none; */
 	}
 	.top-nav {
 	
@@ -1590,15 +1614,15 @@ label.error {
 	background-color: #ff9200;
 }
 
-.vero-field{
+.vero-field {
 	padding: 0 50px 0 20px;
 	margin: 0;
 	border: 2px solid #ff9200;
 	border-radius: 25px;
 	background: none;
-	width: 380px;
+	max-width: 380px;
 	height: 55px;
-	color: #000;;
+	color: #000;
 	font-size: 14px;
 }
 

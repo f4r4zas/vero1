@@ -35,16 +35,7 @@ class LoginController extends Controller
      * @return void
      */
 
-   /* public function showLoginForm()
-    {
-        return view('login');
-    }
 
-    public function doLogin(Request $request){
-
-        print_r($request->all());
-
-    }*/
 
     public function __construct()
     {
