@@ -552,12 +552,13 @@ a:hover{
 	margin-bottom: 29px !important;
 }
 .steps-wrap .steps li {
-	margin: 0;
-	display: block;
-	float: left;
-	width: 32%;
-	margin-bottom: 30px;
-	padding: 0 !important;
+    margin: 0;
+    display: block;
+    float: left;
+    width: 40%;
+    margin-bottom: 30px;
+    padding: 0 !important;
+    text-align: left;
 }
 .form-wrap h1 {
 	padding: 0px;
@@ -1621,4 +1622,32 @@ label.error {
 }
 a#navbarDropdown {
 	color: white;
+}
+.dets {
+    padding: 0;
+    margin: 0;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -18px;
+    border-top: 3px solid #FF9200;
+    margin-left: 55px;
+    margin-top: -14px;
+}
+.dets2 {
+    padding: 0;
+    margin: 0;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 34px;
+    position: relative;
+    left: -40px;
+}
+
+.nobod {
+    border: none;
+}
+.steps-wrap .steps li:last-child {
+    width: 20%;
 }
