@@ -719,24 +719,44 @@ a:hover{
 	margin: 0 auto !important;
 	margin-left: 7px !important;
 }
-.form-wrap select {
-	border-bottom: 1px solid #827b7b;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	width: 100%;
-	height: 35px;
-	font-size: 18px !important;
+.card-header.loginfont {
+	font-size: 25px;
+}
+
+.vero-btn1 {
+	padding: 8px 44px;
+	margin: 0;
+	border: 2px solid #ff9200;
+	border-radius: 50px;
+	color: #f6f4f5;
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	padding: 0 0 15px 0;
-	background: url(../images/arrow-selector.png) no-repeat right;
-	-webkit-appearance: none;
-	background-size: 22px;
-	-moz-appearance: none;
-	/* -webkit-appearance: none; */
-	appearance: none;
-	max-width: 98%;
-	margin-left: 7px;
+	text-transform: uppercase;
+	background-color: black;
+}
+.forgot{
+	font-size:17px !important;
+	margin-top:10px !important;
+}
+.form-wrap select {
+    border-bottom: 1px solid #827b7b;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    height: 40px;
+    font-size: 18px !important;
+    font-weight: 600;
+    padding: 0 0 15px 0;
+    background: url(../images/arrow-selector.png) no-repeat right;
+    -webkit-appearance: none;
+    background-size: 22px;
+    -moz-appearance: none;
+    /* -webkit-appearance: none; */
+    appearance: none;
+    max-width: 98%;
+    margin-left: 7px;
 }
 .select2-container--default .select2-selection--multiple {
 	background-color: transparent !important;

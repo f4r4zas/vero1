@@ -30,8 +30,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
-    <link rel="shortcut icon" href="{{ URL::to("favicon/1.png") }}" type="image/png">
-    <link rel="icon" href="{{ URL::to("favicon/1.png") }}" type="image/png">
+    <link rel="shortcut icon" href="{{ URL::to("favicon/12.png") }}" type="image/png">
+    <link rel="icon" href="{{ URL::to("favicon/12.png") }}" type="image/png">
 
 </head>
 <body>
