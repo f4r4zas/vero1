@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="block-data-1">
-                        <h2>Bibendum Auctor nisi elit</h2>
+                        <h2>Bibendum Auctor nisi elits</h2>
                         <p>Proin gravida nibh vel velit auctor aliquet.
                             Aenean sollicitudin, lorem quis bibendum auctor</p>
                         <a href="#"><img src="images/appstore-button.png"></a>
@@ -19,7 +19,7 @@
         <div class="block-row-2">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>How It Works</h2>
+                    <h2>How It Worksss</h2>
                     <div class="how-row-1">
                         <div class="how-col-1">
                             <img src="images/choos-works.png">

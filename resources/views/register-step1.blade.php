@@ -84,22 +84,23 @@
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Last Name</span>
-                            <input type="text" required name="last_name" value="{{ @$form_data['last_name'] }}">
+                            {{--<input type="text" required name="last_name" value="{{ @$form_data['last_name']  }}">--}}
+                            <input type="text" required name="last_name" value="{{ (@old('last_name')) ? @old('last_name') : @$form_data['last_name']  }}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Gender</span>
-                            {{ Form::select('gender', ["Male"=>"Male","Female"=>"Female","Other"=>"Other"],@$form_data['gender']) }}
+                            {{ Form::select('gender', ["Male"=>"Male","Female"=>"Female","Other"=>"Other"], (@old("gender")) ? @old("gender") : @$form_data['gender'] ) }}
                         </div>
                         <div class=" form-group col-md-6">
                             <span>Mobile Phone Number</span>
-                            <input type="text" value="{{ @$form_data['phoneNumber'] }}" required name="phoneNumber" class="fonto">
+                            <input type="text" value="{{ (@old("phoneNumber")) ? @old("phoneNumber") : @$form_data['phoneNumber'] }}" required name="phoneNumber" class="fonto">
                         </div>
                     </div>
                     <div class="form-group form-row">
                         <span>Email Address</span>
-                        <input type="email" value="{{ @$form_data['userEmail'] }}" required name="userEmail">
+                        <input type="email" value="{{ (@old("userEmail")) ? @old("userEmail") : @$form_data['userEmail'] }}" required name="userEmail">
                     </div>
                     <div class="form-row ">
                         <div class="spacer form-group col-md-6 ">
@@ -122,6 +123,10 @@
                         <div class=" form-group col-md-6 fonto">
                             <span>State</span>
                             {{ Form::select('question[state]', $data["USStates"],@$form_data['question']['state']) }}
+
+                            (@old("question[state]")) ? @old("question[state]") : @$form_data['question']['state']
+
+
                         </div>
                     </div>
                     <div class="form-group form-row">
