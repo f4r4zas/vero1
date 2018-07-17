@@ -101,7 +101,7 @@
                         </div>
                         <div class="spacer form-group col-md-3">
                             <span>Car Model</span>
-                            <select name="vehicle[car_model]">
+                            <select name="vehicle[car_model]" class="fonto">
                                 <?php
                                 $starting_year  =date('Y', strtotime('-50 year'));
                                 $ending_year = date('Y');
@@ -118,27 +118,28 @@
                         </div>
                         <div class="form-group col-md-6">
                             <span>Driver's Licence Number</span>
-                            <input type="text" required id="vehicle[licence_number]" value="{{  @$form_data['vehicle']['licence_number'] }}" name="vehicle[licence_number]">
+                            <input type="text" required id="vehicle[licence_number]" value="{{  @$form_data['vehicle']['licence_number'] }}" name="vehicle[licence_number]" class="fonto">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6">
                             <span>Social Security Number</span>
-                            <input type="text" placeholder="000-00-0000" required id="vehicle[social_security_number]" value="{{  @$form_data['vehicle']['social_security_number'] }}" name="vehicle[social_security_number]">
+                            <input type="text" class="fonto" placeholder="000-00-0000" required id="vehicle[social_security_number]" value="{{  @$form_data['vehicle']['social_security_number'] }}" name="vehicle[social_security_number]">
                         </div>
                         <div class="form-group col-md-6">
                             <span>Insurance Provider Name</span>
-                            <input type="text" required id="vehicle[insurance_provider]"  value="{{  @$form_data['vehicle']['insurance_provider'] }}" name="vehicle[insurance_provider]">
+                            <input type="text" class="fonto" required id="vehicle[insurance_provider]"  value="{{  @$form_data['vehicle']['insurance_provider'] }}" name="vehicle[insurance_provider]">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Insurance Policy Number</span>
-                            <input type="text" required id="vehicle[insurance_policy_number]"  value="{{  @$form_data['vehicle']['insurance_policy_number'] }}" name="vehicle[insurance_policy_number]">
+                            <input type="text" class="fonto" required id="vehicle[insurance_policy_number]"  value="{{  @$form_data['vehicle']['insurance_policy_number'] }}" name="vehicle[insurance_policy_number]">
                         </div>
                         <div class=" form-group col-md-6">
                             <span>Insurance Expiration Date</span>
-                            <input type="text" required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="MM/YY">
+                            <input type="text"  required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="MM" class="expireone fonto">
+                            <input type="text" required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="YYYY" class="expireone fonto">
                         </div>
                        {{-- <div class="spacer3 form-group col-md-3">
                             <span></span>

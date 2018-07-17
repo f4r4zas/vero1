@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-2">
                     <div class="logo-wrap">
-                        <a href=""><img src="images/ver-logo.png"></a>
+                        <a href=""><img src="{{ URL::to("images/ver-logo.png") }}"></a>
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -69,7 +69,8 @@
                             <span>Upload commercial license</span>
                             <label for="imgfile" class="custom-file-upload">
                                 <i class="far fa-file-image"></i>
-                                <input type="file" required name="pic[car_insurance]">
+                                <input type="file" required name="pic[car_insurance]" placeholder="no file selected">
+								
                             </label>
                         </div>
                     </div>

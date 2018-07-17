@@ -1,23 +1,76 @@
 @include("includes.header")
 @include("includes.full_header")
 
-<div class="body-content">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="form-wrap">
-                <h1 class="how">How It Works</h1>
-                <div class="steps-wrap">
-                    <ul class="work-steps">
-                        <li><a href="#"><i class="glyphicon glyphicon-ok"></i></a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-ok"></i></a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-ok"></i></a></li>
-                    </ul>
-                    <ul class="work-details">
-                        <li><p>Item Purchase</p></li>
-                        <li class="pad"><p>Package Pickup & Delivery</p></li>
-                        <li><p>Item Return/Exchange</p></li>
-                    </ul>
-                </div><!--steps-wrap-->
+	<style>
+.steps-wrap .steps.step2 li {
+	margin: 0;
+	display: block;
+	float: left;
+	width: 32%;
+	margin-bottom: 30px;
+	padding: 0 !important;
+	text-align: center;
+}
+	
+.dets {
+	padding: 0;
+	margin: 0;
+	color: #464646;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: -18px;
+	border-top: 3px solid #FF9200;
+	margin-left: 55px;
+	margin-top: -14px;
+}
+.nobod {
+	border: none;
+}
+.dets12 {
+	padding: 0;
+	margin: 0;
+	color: #464646;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 34px;
+	position: relative;
+	
+}
+	</style>
+	<body>
+		
+		<div class="body-content">
+			<div class="container">
+				<div class="col-sm-12">
+					<div class="form-wrap">
+						<h1>Driver Registration</h1>
+						<div class="steps-wrap">
+							<ul class="steps step2">
+								<li>
+									<a href="#">
+									<i class="glyphicon glyphicon-ok"></i>
+									</a>
+									<p class="dets1"></p>
+									<p class="dets12">Item Purchase</p>
+									
+								</li>
+								<li>
+										<a href="#">
+											<i class="glyphicon glyphicon-ok"></i>
+										</a>
+										<p class="dets1"></p>
+										<p class="dets12">Package Pickup & Delivery</p>
+								</li>
+								<li>
+										<a href="#">
+											<i class="glyphicon glyphicon-ok"></i>
+										</a>
+										<p class="dets1 nobod"></p>
+										<p class="dets12">Item Return/Exchange</p>
+								</li>
+							</ul>
+						
+						</div><!--steps-wrap-->
             </div>
         </div>
         <div class="services-wrapper">

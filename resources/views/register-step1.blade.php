@@ -94,7 +94,7 @@
                         </div>
                         <div class=" form-group col-md-6">
                             <span>Mobile Phone Number</span>
-                            <input type="text" value="{{ @$form_data['phoneNumber'] }}" required name="phoneNumber">
+                            <input type="text" value="{{ @$form_data['phoneNumber'] }}" required name="phoneNumber" class="fonto">
                         </div>
                     </div>
                     <div class="form-group form-row">
@@ -119,7 +119,7 @@
                                 <option>United States of America</option>
                             </select>
                         </div>
-                        <div class=" form-group col-md-6 ">
+                        <div class=" form-group col-md-6 fonto">
                             <span>State</span>
                             {{ Form::select('question[state]', $data["USStates"],@$form_data['question']['state']) }}
                         </div>
@@ -131,21 +131,19 @@
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Zip Code</span>
-                            <input type="text" value="{{ @$form_data['zip'] }}" autocomplete="nok" required name="zip">
+                            <input type="text" value="{{ @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
                         </div>
-                        <div class="form-group col-md-6 ">
+                         <div class=" form-group col-md-6 ">
                             <span>City</span>
-
-                            <select required name="city">
-                              <option value="0">Select a state</option>
+                            <select  name="country">
+                                <option>San Fransisco</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="spacer form-group col-md-6 ">
+                         <div class=" form-group col-md-6 ">
                             <span>State</span>
-                            {{ Form::select('state', $data["USStates"]
-                            ) }}
+                            {{ Form::select('question[state]', $data["USStates"],@$form_data['question']['state']) }}
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Country</span>
@@ -165,7 +163,7 @@
                                 <option>None</option>
                             </select>--}}
                         </div>
-                        <div class=" form-group col-md-6 ">
+                        <div class="adjustform form-group col-md-6 ">
                             <span>Which service you are most interested?</span>
 
                             {{ Form::select('question[interestedService]', ['Item Purchase'=>'Item Purchase','Sell Item'=>'Sell Item' ],@$form_data['question']['interestedService'],array("multi")) }}
