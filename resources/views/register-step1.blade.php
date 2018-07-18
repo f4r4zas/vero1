@@ -80,7 +80,8 @@
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>First Name</span>
-                            <input type="text" value="{{ @$form_data['first_name'] }}" required name="first_name">
+                            <input type="text" value="{{ (@old('first_name')) ? @old('first_name') : @$form_data['first_name'] }}" required name="first_name">
+							
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Last Name</span>
@@ -122,25 +123,27 @@
                         </div>
                         <div class=" form-group col-md-6 fonto">
                             <span>State</span>
-                            {{ Form::select('question[state]', $data["USStates"],@$form_data['question']['state']) }}
+                            {{ Form::select('question[state]', $data["USStates"],(@old("question[state]")) ? @old("question[state]") : @$form_data['question']['state']) }}
 
-                            {{--(@old("question[state]")) ? @old("question[state]") : @$form_data['question']['state']--}}
 
 
                         </div>
                     </div>
                     <div class="form-group form-row">
                         <span>Home Address</span>
-                        <input type="text" value="{{ @$form_data['home_address'] }}" required name="home_address">
+                        <input type="text" value="{{ (@old("home_address")) ? @old("home_address") : @$form_data['home_address'] }}" required name="home_address">
+
+
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Zip Code</span>
-                            <input type="text" value="{{ @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
+                            <input type="text" value="{{ (@old("zip")) ? @old("zip") : @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
+
                         </div>
                          <div class=" form-group col-md-6 ">
                             <span>City</span>
-                            <select  name="country">
+                            <select  name="city">
                                 <option>San Fransisco</option>
                             </select>
                         </div>
@@ -148,9 +151,10 @@
                     <div class="form-row">
                          <div class=" form-group col-md-6 ">
                             <span>State</span>
-                            {{ Form::select('question[state]', $data["USStates"],@$form_data['question']['state']) }}
+                            {{ Form::select('state', $data["USStates"],(@old("state")) ? @old("state") : @$form_data['state']) }}
+
                         </div>
-                        <div class=" form-group col-md-6 ">
+                        <div class="form-group col-md-6">
                             <span>Country</span>
                             <select  name="country">
                                 <option>United States</option>
@@ -158,10 +162,12 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="spacer form-group col-md-6 ">
+                        <div class="spacer form-group col-md-6">
                             <span>What is your highest level of education?</span>
 
-                            {{ Form::select('question[hightLevelEducation]', ['High School Graduate'=>'High School Graduate','None'=>'None' ],@$form_data['question']['hightLevelEducation']) }}
+                            {{ Form::select('question[hightLevelEducation]', ['High School Graduate'=>'High School Graduate','None'=>'None' ],(@old("question")['hightLevelEducation']) ? @old("question")['hightLevelEducation'] : @$form_data['question']['hightLevelEducation']) }}
+
+
 
                            {{-- <select name="question[hightLevelEducation]">
                                 <option>High School Graduate</option>
@@ -171,7 +177,9 @@
                         <div class="adjustform form-group col-md-6 ">
                             <span>Which service you are most interested?</span>
 
-                            {{ Form::select('question[interestedService]', ['Item Purchase'=>'Item Purchase','Sell Item'=>'Sell Item' ],@$form_data['question']['interestedService'],array("multi")) }}
+                            {{ Form::select('question[interestedService]', ['Item Purchase'=>'Item Purchase','Sell Item'=>'Sell Item' ],(@old("question")['interestedService']) ? @old("question")['interestedService'] : @$form_data['question']['interestedService'],array("multi")) }}
+
+
 
                         </div>
                     </div>
@@ -179,40 +187,43 @@
                         <div class="spacer form-group col-md-6 ">
                             <span>Are you professionally licensed?</span>
 
-                            {{ Form::select('question[professionalLicensed]', ['Yes'=>'Yes','No'=>'No' ],@$form_data['question']['professionalLicensed']) }}
+                            {{ Form::select('question[professionalLicensed]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['professionalLicensed']) ? @old("question")['professionalLicensed'] : @$form_data['question']['professionalLicensed']) }}
+
+
 
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Are you bonded?</span>
 
-                            {{ Form::select('question[bounded]', ['Yes'=>'Yes','No'=>'No' ],@$form_data['question']['bounded']) }}
+                            {{ Form::select('question[bounded]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['bounded']) ? @old("question")['bounded'] : @$form_data['question']['bounded']) }}
 
                         </div>
                     </div>
                     <div class="form-group form-row">
                         <span>Are you insured?</span>
 
-                        {{ Form::select('question[insured]', ['Yes'=>'Yes','No'=>'No' ],@$form_data['question']['insured']) }}
+                        {{ Form::select('question[insured]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['bounded']) ? @old("question")['bounded'] : @$form_data['question']['insured']) }}
 
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Do you have any professional service licenses?</span>
 
-                            {{ Form::select('question[professionalServiceLicenses]', ['Yes'=>'Yes','No'=>'No' ],@$form_data['question']['professionalServiceLicenses']) }}
+                            {{ Form::select('question[professionalServiceLicenses]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['professionalServiceLicenses']) ? @old("question")['professionalServiceLicenses'] : @$form_data['question']['professionalServiceLicenses']) }}
 
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Please select</span>
 
-                            {{ Form::select('question[profession]', ['Electrician'=>'Electrician','Driving'=>'Driving' ],@$form_data['question']['profession']) }}
+                            {{ Form::select('question[profession]', ['Electrician'=>'Electrician','Driving'=>'Driving' ],(@old("question")['profession']) ? @old("question")['profession'] : @$form_data['question']['profession']) }}
 
                         </div>
                     </div>
                     <div class="form-group form-row">
                         <span>Are you authorized to work in the U.S.?</span>
 
-                        {{ Form::select('question[autToWorkUS]', ['Yes'=>'Yes','No'=>'No' ],@$form_data['question']['autToWorkUS']) }}
+                        {{ Form::select('question[autToWorkUS]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['autToWorkUS']) ? @old("question")['autToWorkUS'] : @$form_data['question']['autToWorkUS']) }}
+
 
                     </div>
                     <div class="form-group form-row">
@@ -224,15 +235,19 @@
                         if(!empty(@$form_data['question']['everFelony'])){
                             $everFelony = "Yes";
                         }
+						
+						if(!empty(@old("question")['everFelony'])){
+							$everFelony = "Yes";
+						}
 
                         ?>
                         {{ Form::select('everFelony', ['Yes'=>'Yes','No'=>'No' ],$everFelony) }}
 
-
                     </div>
                     <div class="form-group form-row" style="<?php if($everFelony == "No"){echo 'display:none';} ?>" id="ans-everFelony">
                         <span>Provide Details</span>
-                        <input placeholder="provide details" type="text" value="{{ @$form_data['question']['everFelony'] }}" name="question[everFelony]">
+                        <input placeholder="provide details" type="text" value="{{ (@old("question")['everFelony']) ? @old("question")['everFelony'] : @$form_data['question']['everFelony'] }}" name="question[everFelony]">
+
                     </div>
                     <div class="form-group form-row">
                         <span>Have you ever been convicted of a DUI and/or reckless driving?</span>
@@ -242,6 +257,11 @@
                         if(!empty(@$form_data['question']['conviction'])){
                             $conviction = "Yes";
                         }
+						
+						if(!empty(@old("question")['conviction'])){
+                            $conviction = "Yes";
+                        }
+						
                         ?>
 
                         {{ Form::select('conviction', ['Yes'=>'Yes','No'=>'No' ],$conviction) }}
@@ -251,7 +271,8 @@
 
                     <div class="form-group form-row" id="ans-conviction" style="<?php if($conviction == "No"){echo 'display:none';} ?>">
                         <span>Provide Details</span>
-                        <input placeholder="provide details" type="text" value="{{ @$form_data['question']['conviction'] }}" name="question[conviction]">
+                        <input placeholder="provide details" type="text" value="{{  (@old("question")['conviction']) ? @old("question")['conviction'] : @$form_data['question']['conviction'] }}" name="question[conviction]">
+
                     </div>
                     <div class="form-group form-row">
 							<span>Have you ever been convicted of a crime of dishonesty and/or terminated from any prior employment for dishonesty
@@ -262,6 +283,10 @@
                         if(!empty(@$form_data['question']['provideDetailsThree'])){
                             $provideDetailsThree = "Yes";
                         }
+						
+						if(!empty(@old("question")['provideDetailsThree'])){
+                            $provideDetailsThree = "Yes";
+                        }
                         ?>
 
                         {{ Form::select('provideDetailsThree', ['Yes'=>'Yes','No'=>'No' ],$provideDetailsThree) }}
@@ -270,7 +295,7 @@
                     <div class="form-group form-row" id="ans-provideDetailsThree" style="<?php if($provideDetailsThree == "No"){echo 'display:none';} ?>">
                         <span>Provide Details</span>
 
-                        <input placeholder="provide details" type="text" value="{{ @$form_data['question']['provideDetailsThree'] }}" name="question[provideDetailsThree]">
+                        <input placeholder="provide details" type="text" value="{{ (@old("question")['provideDetailsThree']) ? @old("question")['provideDetailsThree'] : @$form_data['question']['provideDetailsThree'] }}" name="question[provideDetailsThree]">
 
                     </div>
                     <div class="submit-row submit-button col-md-12">
