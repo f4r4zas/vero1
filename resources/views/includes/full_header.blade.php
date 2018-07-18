@@ -53,15 +53,15 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style="width:100%;">
+                    <img src="{{ URL::to("images/home-banner.jpg") }}" alt="Los Angeles" style="width:100%;">
                 </div>
 
                 <div class="item">
-                    <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style="width:100%;">
+                    <img src="{{ URL::to("images/home-banner.jpg") }}" alt="Chicago" style="width:100%;">
                 </div>
 
                 <div class="item">
-                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" style="width:100%;">
+                    <img src="{{ URL::to("images/home-banner.jpg") }}" alt="New york" style="width:100%;">
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
         </div>
 
 
-        {{-- <div class="col-sm-12 home-banner-wrap">
+      {{--   <div class="col-sm-12 home-banner-wrap">
             <div class="banner-opt">
                 <h1>Bibendum Auctor nisi elit</h1>
                 <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor</p>

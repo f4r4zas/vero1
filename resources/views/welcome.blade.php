@@ -1,6 +1,11 @@
 @include('includes.header')
 @include('includes.full_header')
-
+<style>
+    .top-nav-bg {
+        background: rgb(0, 0, 0);
+        padding: 18px 3%;
+    }
+</style>
 <div class="body-content">
     <div class="container">
         <div class="block-row-1">
