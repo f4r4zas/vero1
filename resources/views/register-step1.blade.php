@@ -124,7 +124,7 @@
                             <span>State</span>
                             {{ Form::select('question[state]', $data["USStates"],@$form_data['question']['state']) }}
 
-                            (@old("question[state]")) ? @old("question[state]") : @$form_data['question']['state']
+                            {{--(@old("question[state]")) ? @old("question[state]") : @$form_data['question']['state']--}}
 
 
                         </div>
