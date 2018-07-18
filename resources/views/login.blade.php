@@ -4,7 +4,7 @@
     <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
     <div class="bootstrap-iso">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row bgs">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <form action="{{ URL::to("/login") }}" method="post">
                         {{ csrf_field() }}

@@ -1,6 +1,8 @@
 @include("includes.header")
-@include("includes.full_header")
+<span class="howhide">
 
+@include("includes.full_header")
+</span>
 	<style>
 .steps-wrap .steps.step2 li {
 	margin: 0;

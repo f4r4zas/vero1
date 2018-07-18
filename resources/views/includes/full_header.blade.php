@@ -52,17 +52,46 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <img src="{{ URL::to("images/home-banner.jpg") }}" alt="Los Angeles" style="width:100%;">
+               
+
+                <div class="item active " style="background:url({{ URL::to("images/2.jpg") }});">
+                   
+				   
+				   <div class="text fade-in">
+				   
+                        	                                   
+
+	               <div class="header-buttons animation animate-down scroll-visible" style="">
+			                    				                                                      
+	                                        
+				   <h1 class="header-title">Deliver More</h1>
+				   <h2>Everything you need to offer quick, convenient store-to-door delivery to your customers. Take your business to the next level with one-hour, same-day delivery options. Start delivering within a few minutes.</h2>
+					<div class="header-buttons animation animate-down scroll-visible" style="">
+			             <a href="#" class="button button--large default" target="">Get in touch</a>
+				          <a href="#" class="button button--large default" target="_blank">Create a business account</a>
+				             </div>
+							 
+							</div>
+				   </div>
+               </div> 
+			    <div class="item " style="background:url({{ URL::to("images/1.jpg") }});">
+                   
+				   
+				   <div class="text fade-in">
+				    <div class="header-buttons animation animate-down scroll-visible" style="">
+				   <h1 class="header-title">Deliver More</h1>
+				   <h2>Everything you need to offer quick, convenient store-to-door delivery to your customers. Take your business to the next level with one-hour, same-day delivery options. Start delivering within a few minutes.</h2>
+					<div class="header-buttons animation animate-down scroll-visible" style="transition-delay: 250ms;">
+			             <a href="#" class="button button--large default" target="">Get in touch</a>
+				          <a href="#" class="button button--large default" target="_blank">Create a business account</a>
+				             </div>
+							 
+							</div>
+				   </div>
+				   
                 </div>
 
-                <div class="item">
-                    <img src="{{ URL::to("images/home-banner.jpg") }}" alt="Chicago" style="width:100%;">
-                </div>
-
-                <div class="item">
-                    <img src="{{ URL::to("images/home-banner.jpg") }}" alt="New york" style="width:100%;">
-                </div>
+                
             </div>
 
             <!-- Left and right controls -->
@@ -75,7 +104,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
+<div class="clearfix"></div>
 
       {{--   <div class="col-sm-12 home-banner-wrap">
             <div class="banner-opt">
