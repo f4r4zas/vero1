@@ -80,8 +80,7 @@ class Registration extends Controller
 
         $returnData = json_decode($urlData);
 
-        print_r($returnData);
-		die();
+     
 
         if(!empty($returnData->data->_id)){
             return $returnData->data->_id;
