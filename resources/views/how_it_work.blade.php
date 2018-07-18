@@ -43,7 +43,7 @@
 			<div class="container">
 				<div class="col-sm-12">
 					<div class="form-wrap">
-						<h1>Driver Registration</h1>
+						<h1>How it Works</h1>
 						<div class="steps-wrap">
 							<ul class="steps step2">
 								<li>
