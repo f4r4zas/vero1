@@ -25,7 +25,7 @@
                                         <li><a href="#">Pricing</a></li>
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Services</a></li>
-                                        <li><a href="#">Magazine</a></li>
+                                        <li><a href="#">Driver Store</a></li>
                                     </ul>
                                 </div>
                             </div>

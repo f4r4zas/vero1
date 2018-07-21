@@ -18,7 +18,7 @@
     <script src="/js/npm.js"></script><script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
@@ -34,6 +34,31 @@
 
     <link rel="shortcut icon" href="{{ URL::to("favicon/12.png") }}" type="image/png">
     <link rel="icon" href="{{ URL::to("favicon/12.png") }}" type="image/png">
+<script>
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+  document.getElementById("body").style.background = "transparent";
+}
+</script>
 
 </head>
-<body>
+<body onload="myFunction()"  style="" >
+ <div class="skype-loader" id="loader">
+    <div class="dot">
+      <div class="first"></div>
+    </div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+
+<div id="body">

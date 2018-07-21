@@ -26,7 +26,7 @@
                                         <li><a href="#">Pricing</a></li>
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Services</a></li>
-                                        <li><a href="#">Magazine</a></li>
+                                        <li><a href="#">Driver Store</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                             <input type="text" value="{{ (@old("zip")) ? @old("zip") : @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
 
                         </div>
-                         <div class=" form-group col-md-6 ">
+                         <div class=" form-group col-md-6 city">
                             <span>City</span>
                             <select  name="city">
                                 <option>San Fransisco</option>

@@ -10,7 +10,7 @@
                     <li><a href="#">Magazine</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 footer-colum">
+            <div class="col-sm-2 footer-colum">
                 <h4>about vero 1</h4>
                 <ul>
                     <li><a href="{{ URL::to("/faq") }}">F.A.Q</a></li>
@@ -21,17 +21,24 @@
                     <li><a href="#">press@vero1.com</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 footer-colum">
+            <div class="col-sm-2 footer-colum">
                 <h4>vero 1 for business</h4>
                 <ul>
                     <li><a href="#">Services</a></li>
                 </ul>
             </div>
-            <div class="col-sm-2 footer-colum">
+			<div class="col-sm-2 footer-colum">
                 <h4>work with us</h4>
                 <ul>
                     <li><a href="#">Become a Quiqee</a></li>
                     <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 footer-colum">
+                <h4>Personal</h4>
+                <ul>
+                    <li><a href="#"><img src="images/appstore-button.png"></a></li>
+                    <li><a href="#"><img src="images/playstore-button.png"></a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">
@@ -56,6 +63,7 @@
             </div>
         </div><!--row-->
     </div><!--container-->
+</div>
 </div>
 </body>
 </html>
