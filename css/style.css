@@ -1894,3 +1894,8 @@ a#navbarDropdown {
 .steps-wrap .steps li:last-child {
     width: 20%;
 }
+
+.disabledMenu{
+    background-color: #ebebe4;
+    pointer-events: none;
+}

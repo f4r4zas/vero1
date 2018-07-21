@@ -124,41 +124,42 @@
                         <div class=" form-group col-md-6 fonto">
                             <span>State</span>
                             {{ Form::select('question[state]', $data["USStates"],(@old("question[state]")) ? @old("question[state]") : @$form_data['question']['state']) }}
-
+                            {{--<input type="text" value="{{ (@old("question")['state']) ? @old("question")['state'] : @$form_data['home_address'] }}" required name="question[state]">--}}
 
 
                         </div>
                     </div>
                     <div class="form-group form-row">
                         <span>Home Address</span>
-                        <input type="text" value="{{ (@old("home_address")) ? @old("home_address") : @$form_data['home_address'] }}" required name="home_address">
-
+                        <input type="text" value="{{ (@old("home_address")) ? @old("home_address") : @$form_data['home_address'] }}" required id="home_address" placeholder="" name="home_address">
 
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Zip Code</span>
-                            <input type="text" value="{{ (@old("zip")) ? @old("zip") : @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
+                            <input type="text"  id="postal_code" value="{{ (@old("zip")) ? @old("zip") : @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
 
                         </div>
-                         <div class=" form-group col-md-6 ">
+                         <div class="form-group col-md-6">
                             <span>City</span>
-                            <select  name="city">
+                             <input type="text"  disabled="true" id="locality" value="{{ (@old("city")) ? @old("city") : @$form_data['city'] }}" autocomplete="nok" required name="city" id="city" class="fonto">
+                            {{--<select  name="city">
                                 <option>San Fransisco</option>
-                            </select>
+                            </select>--}}
                         </div>
                     </div>
                     <div class="form-row">
                          <div class=" form-group col-md-6 ">
                             <span>State</span>
-                            {{ Form::select('state', $data["USStates"],(@old("state")) ? @old("state") : @$form_data['state']) }}
-
+                            {{--{{ Form::select('state', $data["USStates"],(@old("state")) ? @old("state") : @$form_data['state']) }}--}}
+                             <input type="text" disabled="true" id="administrative_area_level_1" value="{{ (@old("state")) ? @old("state") : @$form_data['state'] }}" autocomplete="nok" required name="state" class="fonto">
                         </div>
                         <div class="form-group col-md-6">
                             <span>Country</span>
-                            <select  name="country">
+                            <input type="text" disabled="true" id="country" value="{{ (@old("country")) ? @old("country") : @$form_data['country'] }}" autocomplete="nok" required name="country" class="fonto">
+                            {{--<select  name="country">
                                 <option>United States</option>
-                            </select>
+                            </select>--}}
                         </div>
                     </div>
                     <div class="form-row">
@@ -177,7 +178,7 @@
                         <div class="adjustform form-group col-md-6 ">
                             <span>Which service you are most interested?</span>
 
-                            {{ Form::select('question[interestedService]', ['Item Purchase'=>'Item Purchase','Sell Item'=>'Sell Item' ],(@old("question")['interestedService']) ? @old("question")['interestedService'] : @$form_data['question']['interestedService'],array("multi")) }}
+                            {{ Form::select('question[interestedService]', ['Item Purchase'=>'Item Purchase','Sell Item'=>'Sell Item' ],(@old("question")['interestedService']) ? @old("question")['interestedService'] : @$form_data['question']['interestedService']) }}
 
 
 
@@ -313,11 +314,11 @@
 
         $("[name='phoneNumber']").mask("(000) 000-0000");
 
-        $("[name='state']").select2();
-        $("[name='city']").select2();
-        $("[name='question[interestedService]']").select2({
+      /*  $("[name='state']").select2();
+        $("[name='city']").select2();*/
+        /*$("[name='question[interestedService]']").select2({
             multiple: true,
-        });
+        });*/
 
 
 
