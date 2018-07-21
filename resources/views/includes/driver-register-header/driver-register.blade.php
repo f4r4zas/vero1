@@ -6,13 +6,13 @@
             <p class="dets"></p>
             <p class="dets2">Personal Information</p>
         </li>
-        <li><a class="<?php if($data["step"] == 2){ echo "active"; } ?>" href="{{ URL::to("/driver-register/2") }}" href="#"><i class="glyphicon glyphicon-ok"></i></a>
+        <li><a   class="<?php if($data["step"] == 2){ echo "active"; }   if(Session::has("register-id")){ echo ""; }else{echo "disabledMenu";} ?>" href="{{ URL::to("/driver-register/2") }}" href="#"><i class="glyphicon glyphicon-ok"></i></a>
 
             <p class="dets"></p>
             <p class="dets2">Vehicle Information</p>
         </li>
 
-        <li><a class="<?php if($data["step"] == 3){ echo "active"; } ?>" href="{{ URL::to("/driver-register/3") }}"  href="#"><i class="glyphicon glyphicon-ok"></i></a>
+        <li><a class="<?php if($data["step"] == 3){ echo "active"; }  if(Session::has("register-form-2")){ echo ""; }else{echo "disabledMenu";}?>" href="{{ URL::to("/driver-register/3") }}"  href="#"><i class="glyphicon glyphicon-ok"></i></a>
             <p class="dets nobod"></p>
             <p class="dets2">Upload Documents</p>
         </li>

@@ -76,11 +76,7 @@ class Registration extends Controller
         $urlData = curl_exec($curl);
         curl_close($curl);
 
-
-
         $returnData = json_decode($urlData);
-
-     
 
         if(!empty($returnData->data->_id)){
             return $returnData->data->_id;
