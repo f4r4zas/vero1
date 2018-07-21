@@ -131,19 +131,19 @@
                     </div>
                     <div class="form-group form-row">
                         <span>Home Address</span>
-                        <input type="text" value="{{ (@old("home_address")) ? @old("home_address") : @$form_data['home_address'] }}" required id="home_address" placeholder="" name="home_address">
+                        <input placeholder="Type Full Address" type="text" value="{{ (@old("home_address")) ? @old("home_address") : @$form_data['home_address'] }}" required id="home_address" placeholder="" name="home_address">
 
                     </div>
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Zip Code</span>
-                            <input type="text"  id="postal_code" value="{{ (@old("zip")) ? @old("zip") : @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
+                            <input type="text" placeholder="Street No *" id="postal_code" value="{{ (@old("zip")) ? @old("zip") : @$form_data['zip'] }}" autocomplete="nok" required name="zip" class="fonto">
 
                         </div>
                          <div class=" form-group col-md-6 city">
 
                             <span>City</span>
-                             <input type="text"  disabled="true" id="locality" value="{{ (@old("city")) ? @old("city") : @$form_data['city'] }}" autocomplete="nok" required name="city" id="city" class="fonto">
+                             <input type="text"  placeholder="City" disabled="true" id="locality" value="{{ (@old("city")) ? @old("city") : @$form_data['city'] }}" autocomplete="nok" required name="city" id="city" class="fonto">
                             {{--<select  name="city">
                                 <option>San Fransisco</option>
                             </select>--}}
@@ -157,7 +157,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <span>Country</span>
-                            <input type="text" disabled="true" id="country" value="{{ (@old("country")) ? @old("country") : @$form_data['country'] }}" autocomplete="nok" required name="country" class="fonto">
+                            <input type="text" placeholder="Country" disabled="true" id="country" value="{{ (@old("country")) ? @old("country") : @$form_data['country'] }}" autocomplete="nok" required name="country" class="fonto">
                             {{--<select  name="country">
                                 <option>United States</option>
                             </select>--}}
