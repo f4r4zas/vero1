@@ -24,7 +24,7 @@
         <div class="block-row-2">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>How It Worksss</h2>
+                    <h2>How It Works</h2>
                     <div class="how-row-1">
                         <div class="how-col-1">
                             <img src="images/choos-works.png">

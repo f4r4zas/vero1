@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Vero1</title>
+    <title>Vero 1</title>
     <link rel="stylesheet" href="{{ URL::to("css/style.css") }}" />
     <link rel="stylesheet" href="{{ URL::to("css/bootstrap.css") }}" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
@@ -48,6 +48,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("body").style.display = "block";
   document.getElementById("body").style.background = "transparent";
+  document.getElementById("body2").style.display = "block";
 }
 </script>
 

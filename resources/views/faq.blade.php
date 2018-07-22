@@ -1,5 +1,9 @@
 @include("includes.header")
+<span class="howhide">
+
 @include("includes.full_header")
+</span>
+
 <div class="body-content">
     <div class="container">
         <div class="col-sm-12">
@@ -98,42 +102,42 @@
 				<div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                6.	Can females request female drivers?
                             </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+Yes, because VERO 1 safety and security is the highest priority, females my request female drivers for ride-sharing if any are available.   
+</div>
+</div>
+</div>
+				<div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+7.	I purchase an item(s), but did not receive a receipt.  What happens?
+							</a>
                         </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat
+                            Drivers should always provide you a copy of the receipt of the purchased items at the time of delivery.  Drivers are supposed to scan the receipt and electronically send it to you by email.  If you do not receive a receipt, request one from the driver.  If the driver is unable or unwilling to provide you a receipt, but does deliver to you the items you ordered, you will still be charged for any items you electronically sign for upon acknowledged receipt of the items, but you will not be charged for the driver service fee. You should also indicate that you did not receive your receipt in your feedback of the driver and/or contact customer support.
                         </div>
                     </div>
                 </div>
 				<div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                            </a>
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+8.	Can I order a ride-share for another person?                           
+ </a>
                         </h4>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
+                    <div id="collapse8" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat
-                        </div>
-                    </div>
-                </div>
-				<div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat
+                           Yes.  After you enter the pick-up location for the other person, the VERO 1 driver will go to the location of the other person and obtain their destination and details from that person if you do not know.  However, your VERO 1 Wallet will be charged for the ride-sharing service provided to the other user.
                         </div>
                     </div>
                 </div>
@@ -141,37 +145,115 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsethree">
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                              9.	Can I price compare items and read reviews about items from different stores on VERO 1 before I place a purchase service request?
                             </a>
                         </h4>
                     </div>
-                    <div id="collapsethree" class="panel-collapse collapse">
+                    <div id="collapse9" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat
+                           Yes.  VERO 1 allows you to price compare items from different retailers and read user reviews about them.
                         </div>
                     </div>
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                               10.	Can I read reviews, ratings, and user feedback of professional and specialized service drivers before I select them?
                             </a>
                         </h4>
                     </div>
-                    <div id="collapsefour" class="panel-collapse collapse">
+                    <div id="collapse10" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat
+                            Yes, if any are available.  Moreover, you can post reviews, ratings, and feedback for your
+professional service driver for other users to read.    Please note that all reviews are reviewed before they post for inappropriate language.
+
                         </div>
                     </div>
                 </div>
+				   <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                               11.	Why is the actual price of the item(s) is different than the estimated price given in the app?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse11" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           Prices at retail stores and especially at groceries, supermarkets, and pharmacies fluctuate a lot and often daily or weekly.  While VERO 1 strives to provide the most accurate prices of items at retail stores, the actual price at the time the driver purchases your item(s) may be different.  Thus, the total purchase price may be different (higher or lower) due to taxes, price changes by the retailer, promotions, and coupons.   
+
+                        </div>
+                    </div>
+                </div>
+				 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                               12.	Can I schedule regular package or item purchase delivery (e.g. on a weekly, bi-weekly or monthly basis)?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse12" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           Yes. If there are certain grocery and pharmacy items you need purchased and delivered to you on a regular basis, you can schedule to have them taken care of for you.
+
+                        </div>
+                    </div>
+                </div>
+				 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                               13.	How do drivers pay for my purchases?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse13" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          VERO 1 drivers pay for your items at stores using their own credit cards.  They are reimbursed for these purchases when the items are delivered to you, you electronically sign for receipt of the items, and your VERO 1 Wallet is charged to pay for your service which includes both the service fee and the cost of the purchased items including sales tax. 
+
+                        </div>
+                    </div>
+                </div>
+				 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                               14.	I want to return/exchange an item, but I don’t have a receipt?  What do I do? 
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse14" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           Most stores will issue store credit for a returned or exchanged item depending on the store’s return and exchange policy.  Your VERO 1 driver will attempt to return the item without a receipt to get you a store credit voucher card, but cannot make any guarantees.   If the store issues store credit, the driver will deliver you the store credit voucher card.  However, you will be charged for the service fee for the time the driver has spent even if he unable to get you store credit.    
+
+                        </div>
+                    </div>
+                </div>
+				 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                               15.	The price of the item I want to exchange for is different from the one I am exchanging.  What happens?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse15" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           If the price of the item you are exchanging for is more, you will be charged the difference as part of your service fee total.  If the price is less, you will get a store credit card voucher or your credit card on file with the store will be credited back the difference.
+
+                        </div>
+                    </div>
+                </div>
+				
+				
             </div>
 
 
         </div>
-
-
-    </div>
 </div>
+    </div>
+
 @include("includes.footer")

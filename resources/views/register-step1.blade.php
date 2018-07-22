@@ -21,7 +21,7 @@
                                 </div>
                                 <div class="collapse navbar-collapse navbarCollapse">
                                     <ul>
-                                        <li><a href="#">Overview</a></li>
+                                        <li><a href="#">Home</a></li>
                                         <li><a href="{{ URL::to("/how-it-works") }}">How it works</a></li>
                                         <li><a href="#">Pricing</a></li>
                                         <li><a href="#">About us</a></li>
@@ -107,7 +107,7 @@
                         <div class="spacer form-group col-md-6 ">
                             <span>Password</span>
                             <input type="password" id="main_password" name="password" required>
-                            <span class="custom help-block">Password should contain aleast 1 Capital | 1 Special Character .</span>
+                            <span class="custom help-block">Password should contain at least one capital and one special character</span>
                         </div>
                         <div class=" form-group col-md-6 ">
                             <span>Confirm Password</span>
