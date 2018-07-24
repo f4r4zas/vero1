@@ -55,3 +55,4 @@ Route::get('/how-it-works', 'Common@how')->name('home');
 Route::get('/about-us', 'Common@about');
 Route::get('/coverage', 'Common@coverage');
 Route::get('/service', 'Common@service');
+Route::get('/terms', 'Common@terms');

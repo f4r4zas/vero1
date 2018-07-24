@@ -33,4 +33,7 @@ class Common extends Controller
         return view("service");
     }
 
+    public function terms(){
+        return view("terms");
+    }
 }
