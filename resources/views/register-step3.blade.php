@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-2">
                     <div class="logo-wrap">
-                        <a href=""><img src="{{ URL::to("images/ver-logo.png") }}"></a>
+                        <a href="{{ URL::to("/") }}"><img src="{{ URL::to("images/ver-logo.png") }}"></a>
                     </div>
                 </div>
                 <div class="col-sm-8">

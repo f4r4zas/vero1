@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-2">
                     <div class="logo-wrap">
-                        <a href=""><img src="{{ URL::to("images/ver-logo.png") }}"></a>
+                        <a href="{{ URL::to("/") }}"><img src="{{ URL::to("images/ver-logo.png") }}"></a>
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -138,8 +138,8 @@
                         </div>
                         <div class=" form-group col-md-6">
                             <span>Insurance Expiration Date</span>
-                            <input type="text"  required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="MM" class="expireone fonto">
-                            <input type="text" required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="YYYY" class="expireone fonto">
+                            <input type="text"  required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="MM" class="expireone fonto p1">
+                            <input type="text" required id="vehicle[insurance_expire]"  value="{{  @$form_data['vehicle']['insurance_expire'] }}" name="vehicle[insurance_expire]" placeholder="YYYY" class="expireone fonto p2">
                         </div>
                        {{-- <div class="spacer3 form-group col-md-3">
                             <span></span>
@@ -158,9 +158,11 @@
 <script>
 
     $(document).ready(function(){
-        $("[name='vehicle[insurance_expire]']").mask('00/0000');
+        $("[name='vehicle[insurance_expire]'].p1").mask('00');
+        $("[name='vehicle[insurance_expire]'].p2").mask('0000');
+
         $("[name='vehicle[social_security_number]']").mask('000-00-0000');
-        $("[name='vehicle[licence_plate_number]']").mask('000-000');
+        $("[name='vehicle[licence_plate_number]']").mask('AAA-AAA');
         //$("[name='vehicle[licence_number]']").mask('000-000');
 
 

@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-2">
                     <div class="logo-wrap">
-                        <a href=""><img src="images/ver-logo.png"></a>
+                        <a href="{{ URL::to("/") }}"><img src="{{ URL::to("images/ver-logo.png") }}"></a>
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -167,14 +167,23 @@
                         <div class="spacer form-group col-md-6">
                             <span>What is your highest level of education?</span>
 
-                            {{ Form::select('question[hightLevelEducation]', ['High School Graduate'=>'High School Graduate','None'=>'None' ],(@old("question")['hightLevelEducation']) ? @old("question")['hightLevelEducation'] : @$form_data['question']['hightLevelEducation']) }}
+                            {{ Form::select('question[hightLevelEducation]', ['No formal education'=>'No formal education',
+                            'Primary education'=> 'Primary education',
+                            'Secondary education or high school' => 'Secondary education or high school',
+                            'GED' => 'GED',
+                            'Vocational qualification'=> 'Vocational qualification',
+                            'Bachelor"s degree' => 'Bachelor"s degree',
+                            'Master"s degree'=> 'Master"s degree',
+                            'Doctorate or higher' => 'Doctorate or higher' ],(@old("question")['hightLevelEducation']) ? @old("question")['hightLevelEducation'] : @$form_data['question']['hightLevelEducation']) }}
 
 
 
-                           {{-- <select name="question[hightLevelEducation]">
-                                <option>High School Graduate</option>
-                                <option>None</option>
-                            </select>--}}
+
+
+                            {{-- <select name="question[hightLevelEducation]">
+                                 <option>High School Graduate</option>
+                                 <option>None</option>
+                             </select>--}}
                         </div>
                         <div class="adjustform form-group col-md-6 ">
                             <span>Which service you are most interested?</span>
@@ -204,9 +213,28 @@
                     <div class="form-group form-row">
                         <span>Are you insured?</span>
 
-                        {{ Form::select('question[insured]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['bounded']) ? @old("question")['bounded'] : @$form_data['question']['insured']) }}
+                        <?php
+                        $youInsured = "No";
+                        if(!empty(@$form_data['insured'])){
+                            $youInsured = "Yes";
+                        }
+
+                        if(!empty(@old("insured"))){
+                            $youInsured = "Yes";
+                        }
+
+                        ?>
+
+                        {{ Form::select('insured', ['No'=>'No','Yes'=>'Yes' ],(@old("insured")) ? @old("insured") : @$form_data['insured']) }}
 
                     </div>
+
+                    <div class="form-group form-row" style="<?php if($youInsured == "No"){echo 'display:none';} ?>" id="ans-insured">
+                        <span>Name of insurance Provider</span>
+                        <input placeholder="provide details" type="text" value="{{ (@old("question")['insured']) ? @old("question")['insured'] : @$form_data['question']['insured'] }}" name="question[insured]">
+
+                    </div>
+
                     <div class="form-row">
                         <div class="spacer form-group col-md-6 ">
                             <span>Do you have any professional service licenses?</span>
@@ -217,7 +245,7 @@
                         <div class=" form-group col-md-6 ">
                             <span>Please select</span>
 
-                            {{ Form::select('question[profession]', ['Electrician'=>'Electrician','Driving'=>'Driving' ],(@old("question")['profession']) ? @old("question")['profession'] : @$form_data['question']['profession']) }}
+                            {{ Form::select('question[profession]', ['Electrician'=>'Electrician','HVAC'=>'HVAC','Health care'=>'Health care','Pest control exterminators'=>'Pest control exterminators','House cleaning services'=>'House cleaning services','Junk, waste, and debris removal'=>'Junk, waste, and debris removal','Driving'=>'Driving','Swimming pool cleaner'=>'Swimming pool cleaner','Gardener and landscaping'=>'Gardener and landscaping','Yard maintenance and cleaning'=>'Yard maintenance and cleaning','Window cleaning'=>'Window cleaning','Electrician'=>'Electrician','Handyman'=>'Handyman','Snow removal'=>'Snow removal','Locksmith'=>'Locksmith','Nursing and home therapists'=>'Nursing and home therapists' ],(@old("question")['profession']) ? @old("question")['profession'] : @$form_data['question']['profession']) }}
 
                         </div>
                     </div>
@@ -225,6 +253,30 @@
                         <span>Are you authorized to work in the U.S.?</span>
 
                         {{ Form::select('question[autToWorkUS]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['autToWorkUS']) ? @old("question")['autToWorkUS'] : @$form_data['question']['autToWorkUS']) }}
+
+
+                    </div>
+
+                    <div class="form-group form-row">
+                        <span>Do you have commercial auto policy.?</span>
+
+                        {{ Form::select('question[autoPolicy]', ['Yes'=>'Yes','No'=>'No' ],(@old("question")['autoPolicy']) ? @old("question")['autoPolicy'] : @$form_data['question']['autoPolicy']) }}
+
+
+                    </div>
+
+                    <div class="form-group form-row">
+                        <span>Do you have property damage coverage.?</span>
+
+                        <input placeholder="provide details" type="text" value="{{  (@old("question")['damageCover']) ? @old("question")['damageCover'] : @$form_data['question']['damageCover'] }}" name="question[damageCover]">
+
+
+                    </div>
+
+                    <div class="form-group form-row">
+                        <span>Do you have personal liability coverage.?</span>
+
+                        <input placeholder="provide details" type="text" value="{{  (@old("question")['personalCover']) ? @old("question")['personalCover'] : @$form_data['question']['personalCover'] }}" name="question[personalCover]">
 
 
                     </div>
@@ -251,6 +303,8 @@
                         <input placeholder="provide details" type="text" value="{{ (@old("question")['everFelony']) ? @old("question")['everFelony'] : @$form_data['question']['everFelony'] }}" name="question[everFelony]">
 
                     </div>
+
+
                     <div class="form-group form-row">
                         <span>Have you ever been convicted of a DUI and/or reckless driving?</span>
 
@@ -377,6 +431,17 @@
                     }else{
                         $("#ans-provideDetailsThree").hide();
                         $("[name='question[provideDetailsThree]']").val("");
+                    }
+            });
+
+
+            $("[name='insured']").change(function(){
+                    if($(this).val() == "Yes"){
+
+                        $("#ans-insured").show();
+                    }else{
+                        $("#ans-insured").hide();
+                        $("[name='question[insured]']").val("");
                     }
             });
 

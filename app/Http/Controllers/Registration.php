@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\common_functions\LocationData;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\URL;
 use MongoDB\Client;
@@ -207,5 +208,16 @@ class Registration extends Controller
         Session::flash('message', 'Registration successful!');
         return redirect(URL::to("/login"));
 
+    }
+
+    public function basic_email(){
+        $data = array('name'=>"sdasd");
+
+        Mail::send(['text'=>'mail'], $data, function($message) {
+            $message->to('zeeshan4971@gmail.com', 'sda')->subject
+            ('Laravel Basic Testing Mail');
+            $message->from('vero1@techopialabs.com','sdasd');
+        });
+        echo "Basic Email Sent. Check your inbox.";
     }
 }
