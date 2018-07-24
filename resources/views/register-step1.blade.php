@@ -153,7 +153,7 @@
                          <div class=" form-group col-md-6 ">
                             <span>State</span>
                             {{--{{ Form::select('state', $data["USStates"],(@old("state")) ? @old("state") : @$form_data['state']) }}--}}
-                             <input type="text" disabled="true" id="administrative_area_level_1" value="{{ (@old("state")) ? @old("state") : @$form_data['state'] }}" autocomplete="nok" required name="state" class="fonto">
+                             <input type="text" disabled="true" id="administrative_area_level_1" value="{{ (@old("state")) ? @old("state") : @$form_data['state'] }}" placeholder="State" autocomplete="nok" required name="state" class="fonto">
                         </div>
                         <div class="form-group col-md-6">
                             <span>Country</span>

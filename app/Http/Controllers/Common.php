@@ -25,4 +25,12 @@ class Common extends Controller
         return view("coverage");
     }
 
+    public function about(){
+        return view("about-us");
+    }
+
+    public function service(){
+        return view("service");
+    }
+
 }

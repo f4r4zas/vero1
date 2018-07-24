@@ -1,13 +1,13 @@
-@extends('layouts.app')
+@include("includes.header")
+<span class="howhide">
 
-@section('content')
+@include("includes.full_header")
+</span>
     <style>
         html{
             background: #f4f4f4
         }
     </style>
-
-
 <div class="bgs">
 <div class="container">
     <div class="row justify-content-center ">
@@ -82,4 +82,6 @@
     </div>
 </div>
 </div>
-@endsection
+<div id="body2">
+    @include("includes.footer")
+</div>
