@@ -21,4 +21,8 @@ class Common extends Controller
         return view('how_it_work');
     }
 
+    public function coverage(){
+        return view("coverage");
+    }
+
 }
