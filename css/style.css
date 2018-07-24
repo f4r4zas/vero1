@@ -163,10 +163,14 @@ a:hover{
 .bgs {
 	background: url(../images/5.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	
+	background-size: cover;
 }
 .drive-reg-banner .page-title {
 	display: none;
+}
+.sampepage {
+	margin: 56px 0PX;
 }
 .drive-reg-banner {
 	background: url(../images/reg-driv-banner.jpg) no-repeat center;
@@ -351,7 +355,7 @@ a:hover{
 	margin: 0;
 	display: inline-block;
 	float: right;
-	max-width:583px;
+	max-width: 43%;
 }
 .block-data-1 h2{
 	font-size:46px;
@@ -462,6 +466,7 @@ a:hover{
 	float: right;
 	max-width: 583px;
 	font-family: 'Raleway', sans-serif;
+	text-align: justify;
 }
 .block-data-3 h2{
 	font-size:42px;
@@ -1959,7 +1964,7 @@ label.error {
 }
 
 .vero-field {
-	padding: 0 50px 0 20px;
+	padding: 0 21px 0 20px;
 	margin: 0;
 	border: 2px solid #ff9200;
 	border-radius: 25px;
@@ -1969,7 +1974,6 @@ label.error {
 	color: #000;
 	font-size: 14px;
 }
-
 .navbar-laravel{
 	background: #0f0f0e;
 	padding: 25px 3%;
