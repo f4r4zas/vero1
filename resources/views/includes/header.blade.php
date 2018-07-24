@@ -3,11 +3,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Vero 1</title>
-    <link rel="stylesheet" href="{{ URL::to("css/style.css") }}" />
     <link rel="stylesheet" href="{{ URL::to("css/bootstrap.css") }}" />
+    <link rel="stylesheet" href="{{ URL::to("css/style.css") }}" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet">
