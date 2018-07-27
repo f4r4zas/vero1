@@ -77,7 +77,8 @@ function showPage() {
 */
             autocomplete = new google.maps.places.Autocomplete(
                 /** @type {!HTMLInputElement} */(document.getElementById('home_address')),
-                {types: ['geocode']});
+                {types: ['geocode'],  componentRestrictions: {country: "us"}
+                });
             autocomplete.addListener('place_changed', fillInAddress);
 
             // Get each component of the address from the place details
