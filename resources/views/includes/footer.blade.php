@@ -7,13 +7,13 @@
                     <li><a href="{{ URL::to("/coverage") }}">Coverage area</a></li>
                     <li><a href="{{ URL::to("/driver-register") }}">Sign up</a></li>
                     <li><a href="{{ URL::to("/login") }}">Log in</a></li>
-                    <li><a href="#">Magazine</a></li>
+                    <li><a href="#">Driver Store</a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">
                 <h4>about vero 1</h4>
                 <ul>
-                    <li><a href="{{ URL::to("/faq") }}">F.A.Q</a></li>
+                    <li><a href="{{ URL::to("/faq") }}">FAQ</a></li>
                     <li><a href="{{ URL::to("/terms") }}">T&C</a></li>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="{{ URL::to("/about-us") }}">About us</a></li>
@@ -35,7 +35,7 @@
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">
-                <h4>Personal</h4>
+                <h4>Get VERO 1 App</h4>
                 <ul>
                     <li><a href="#"><img src="images/appstore-button.png"></a></li>
                     <li><a href="#"><img src="images/playstore-button.png"></a></li>
@@ -46,7 +46,15 @@
                 <ul>
                     <li><a href="#">0203 308 9943</a></li>
                     <li><a href="#">support@vero1.com</a></li>
+					
+					
                 </ul>
+				<ul class="social">
+				<li><a href="#" class=""><img src="images/fb.png"/></a>
+                   <a href="#" class=""><img src="images/tw.png"/></a>
+				<a href="#" class=""><img src="images/ins.png"/></a></li>
+				
+				<ul>
             </div>
         </div><!--row-->
     </div><!--container-->

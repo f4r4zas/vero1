@@ -91,8 +91,27 @@ body{
 	line-height: .71;
 	margin: 0 0 33px;
 	margin: 52px 0px;
+	font-size:80px;
+	font-family: 'Montserrat', sans-serif;
 }
+.social img {
+	width: 47px;
+	background: #FF9200;
+}
+.col-md-6.sampepage {
+	margin: 70px 0px;
+}
+.col-form-label {
 
+	line-height: 2.5;
+}
+.login label {
+	
+}.sampepage .col-md-4.col-form-label.text-md-right {
+margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+}
 .header-buttons {
 	margin-top: 20px;
 	margin-left: -5px;
@@ -163,14 +182,10 @@ a:hover{
 .bgs {
 	background: url(../images/5.jpg);
 	background-repeat: no-repeat;
-	
-	background-size: cover;
+	background-size: 100%;
 }
 .drive-reg-banner .page-title {
 	display: none;
-}
-.sampepage {
-	margin: 56px 0PX;
 }
 .drive-reg-banner {
 	background: url(../images/reg-driv-banner.jpg) no-repeat center;
@@ -411,6 +426,47 @@ a:hover{
 	margin:0;
 	width:58%;
 }
+.cov .how-row-1 .how-col-2{
+	float:left;
+	padding:0;
+	margin:0;
+	width:100%;
+}
+.faq .faqwidth li {
+	padding: 0 0px !important;
+	text-align: center;
+	display: block;
+	width: 30%;
+	float: left;
+	margin-bottom: 29px !important;
+}
+.faq .steps-wrap .steps li:last-child {
+	width: 28%;
+}
+.cov .how-row-1 .how-col-collect-2 {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.faq .steps-wrap .steps li {
+	margin: 0;
+	display: block;
+	float: left;
+	width: 30%;
+	margin-bottom: 30px;
+	padding: 0 !important;
+	text-align: center;
+}
+.how-row-1 .how-col-2{
+	float:left;
+	padding:0;
+	margin:0;
+	width:58%;
+}
+.faq .panel-body {
+	font-size: 16px;
+}
 .how-row-1 .how-col-collect-2{
 	float:left;
 	padding:0;
@@ -466,7 +522,6 @@ a:hover{
 	float: right;
 	max-width: 583px;
 	font-family: 'Raleway', sans-serif;
-	text-align: justify;
 }
 .block-data-3 h2{
 	font-size:42px;
@@ -1964,7 +2019,7 @@ label.error {
 }
 
 .vero-field {
-	padding: 0 21px 0 20px;
+	padding: 0 50px 0 20px;
 	margin: 0;
 	border: 2px solid #ff9200;
 	border-radius: 25px;
@@ -1974,6 +2029,7 @@ label.error {
 	color: #000;
 	font-size: 14px;
 }
+
 .navbar-laravel{
 	background: #0f0f0e;
 	padding: 25px 3%;
@@ -2017,10 +2073,15 @@ a#navbarDropdown {
 	position: relative;
 	left: -40px;
 }
+
 .form-wrap .clearfix {
 	margin-bottom: 30px;
 }
-
+.fonto {
+	font-weight: 600 !important;
+	color: #000;
+	background: transparent;
+}
 .nobod {
     border: none;
 }
@@ -2029,6 +2090,6 @@ a#navbarDropdown {
 }
 
 .disabledMenu{
-    background-color: #ebebe4;
+   
     pointer-events: none;
 }

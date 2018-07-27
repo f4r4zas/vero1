@@ -4,11 +4,11 @@
 @include("includes.full_header")
 </span>
 
-<div class="body-content">
+<div class="body-content faq">
     <div class="container">
         <div class="col-sm-12">
             <div class="form-wrap">
-                <h1>Faq</h1>
+                <h1>FAQ</h1>
                 <div class="steps-wrap">
                     <ul class="steps">
                         <li>
@@ -34,7 +34,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                1.	What do I do if an item I order is not exactly what the driver brings.
+                                1.	What do I do if an item I order is not exactly what the driver brings?
                             </a>
                         </h4>
                     </div>
@@ -48,7 +48,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					2.	I have a dispute with my driverover my item purchase, what can I do?	                            </a>
+					2.	I have a dispute with my driver over my item purchase, what can I do?	                            </a>
                         </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
@@ -67,7 +67,7 @@
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat
+                        At the time your item(s) is delivered to you, you electronically sign for receipt.  Your VERO 1 Wallet will be charged.   You will also be charged for any service requests that are not cancelled within five minutes of placing the order.  For instance, if you place an Eats Order and do not cancel within five minutes, your VERO 1 Wallet will be charged.
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                4.	How can I transfer funds to and from my VERO 1 Wallet?in, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                4.	How can I transfer funds to and from my VERO 1 Wallet?
                             </a>
                         </h4>
                     </div>
@@ -121,7 +121,7 @@ Yes, because VERO 1 safety and security is the highest priority, females my requ
 							</a>
                         </h4>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
+                    <div id="collapse7" class="panel-collapse collapse">
                         <div class="panel-body">
                             Drivers should always provide you a copy of the receipt of the purchased items at the time of delivery.  Drivers are supposed to scan the receipt and electronically send it to you by email.  If you do not receive a receipt, request one from the driver.  If the driver is unable or unwilling to provide you a receipt, but does deliver to you the items you ordered, you will still be charged for any items you electronically sign for upon acknowledged receipt of the items, but you will not be charged for the driver service fee. You should also indicate that you did not receive your receipt in your feedback of the driver and/or contact customer support.
                         </div>
