@@ -112,9 +112,13 @@ class Registration extends Controller
         $param = array(
             "user_type" => "driver",
             "email" =>  $request->input("userEmail"),
-            "country" => $request->input("country"),
-            "state" => $request->input("state"),
-            "city" => $request->input("city"),
+           // "country" => $request->input("country"),
+            //"country" => "US",
+            "country" => "USA",
+           // "state" => $request->input("state"),
+            "state" => "IL",
+            //"city" => $request->input("city"),
+            "city" => "Southern Pines",
             "zip" => $request->input("zip"),
             "street_address"=> $request->input("home_address"),
             "zip"=> $request->input("zip"),
@@ -125,10 +129,10 @@ class Registration extends Controller
         );
 
 
-        if($unique){
+        /*if($unique){
             Session::flash('message', 'Email already registered!');
             return redirect(URL::to("/driver-register"));
-        }
+        }*/
 
        $insertId = $this->apiRegister($param);
         if($insertId){
