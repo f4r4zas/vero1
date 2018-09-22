@@ -57,9 +57,9 @@ body{
 	display: none;
 }
 .item.active {
-	min-height: 550px;
+
 	background-repeat: no-repeat !important;
-	background-size: 100% !important;
+	
 }
 .text {
 	padding: 10% 13% 0px;
@@ -71,7 +71,64 @@ body{
 .text{
 	
 }
+.carousel-control.left {
+	/* background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+	/* background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+	/* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+	/* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+	background-image: none !important;
+}
+.carousel-control.right {
+	/* background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+	/* background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+	/* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+	/* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+	background-image: none !important;
+}
 
+
+.carousel-fade .carousel-inner > .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner > .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner > .active.left,
+.carousel-fade .carousel-inner > .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner > .next.left,
+.carousel-fade .carousel-inner  > .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.text.fade-in.right {
+	text-align: right;
+}
+
+.right .header-title {
+	text-align: left;
+	float: right;
+	width: 60%;
+	margin: 20px 0px;
+}
+.right .header-buttons.animation.animate-down.scroll-visible {
+	float: right;
+	width: 61%;
+	text-align: left;
+}
 .text h2 {
 	/* font-size: 50px; */
 	font-size: 2.25rem;
@@ -86,13 +143,20 @@ body{
 }
 .header-title {
 	/* font-size: 100px; */
-	font-size: 6.25rem;
+	/* font-size: 6.25rem; */
 	color: #fff;
-	line-height: .71;
-	margin: 0 0 33px;
-	margin: 52px 0px;
-	font-size:80px;
+	/* line-height: .71; */
+	/* margin: 0 0 33px; */
+	margin: 37px 0px;
+	font-size: 46px;
 	font-family: 'Montserrat', sans-serif;
+	line-height: 47px;
+	width: 60%;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.text.fade-in.right {
+	margin-left: 100px;
 }
 .social img {
 	width: 47px;
@@ -116,6 +180,10 @@ margin: 0;
 	margin-top: 20px;
 	margin-left: -5px;
 	margin-right: -5px;
+}
+.hr {
+	width: 40%;
+	margin-top: 95px;
 }
 .header-buttons .button {
 	/* font-size: 20px; */
@@ -143,8 +211,8 @@ margin: 0;
 	-o-transition: .8s cubic-bezier(0,0,.39,1.03) opacity,-o-transform .5s;
 	transition: .8s cubic-bezier(0,0,.39,1.03) opacity,transform .5s !important;
 }
-.item{
-	min-height: 550px;
+.item {
+	min-height: 509px;
 }
 .container.mainpagetitle {
 
@@ -187,18 +255,73 @@ a:hover{
 .drive-reg-banner .page-title {
 	display: none;
 }
+.button.button--large.default {
+	font-family: 'Montserrat', sans-serif;
+}
 .drive-reg-banner {
 	background: url(../images/reg-driv-banner.jpg) no-repeat center;
 	padding: 0;
 	margin: 0;
 	background-size: 100%;
 }
+.specialhq {
+	margin-bottom: 0 !important;
+	padding: 12px !important;
+	/* font-size: 17px !important; */
+}
+.specialhq a {
+	font-size: 28px !important;
+}
+.specialhq a:hover {
+	color: black !important;
+}
+.carousel-inner > .item {
+	-webkit-transition: -webkit-transform .9s ease-in-out;
+	-o-transition: -o-transform .9s ease-in-out;
+	transition: transform .9s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+}
+
+ .carousel-inner > .item {
+    -webkit-transition-property: opacity !important;
+    transition-property: opacity !important;
+	 transition-duration: 4s;
+  transition-timing-function:linear;
+}
+ .carousel-inner > .item,
+.carousel-inner > .active.left,
+ .carousel-inner > .active.right {
+    opacity: 0;
+}
+ .carousel-inner > .active,
+ .carousel-inner > .next.left,
+ .carousel-inner > .prev.right {
+    opacity: 1;
+}
+ .carousel-inner .next,
+.carousel-inner .prev,
+ .carousel-inner .active.left,
+ .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+#myCarousel {
+	background: #000 !important;
+}
 .home-reg-banner {
-	background: url(../images/home-banner.jpg) no-repeat center;
+	background: transparent !important;
 	padding: 0;
 	margin: 0;
 	background-size: 100%;
 }
+
 .top-nav-bg {
 	background: rgb(0,0,0,0.5);
 	padding: 18px 3%;
@@ -372,6 +495,9 @@ a:hover{
 	float: right;
 	max-width: 43%;
 }
+.adjmargo {
+	margin-top: 21px !important;
+}
 .block-data-1 h2{
 	font-size:46px;
 	font-weight:200;
@@ -381,7 +507,7 @@ a:hover{
 .block-data-1 p {
 	font-size: 16px;
 	font-weight: 400;
-	padding: 25px 190px 25px 0;
+	padding: 25px 149px 25px 0;
 	margin: 0;
 }
 .block-data-1 a {
@@ -509,11 +635,12 @@ a:hover{
 	margin:0;
 }
 .block-row-3 {
-	padding: 75px 0 0 0;
+	padding: 0px 0 0 0;
 	margin: 0 0 53px 0;
 	background: url(../images/iphone-mockup-2.png) no-repeat left;
 	background-size: 60%;
 	overflow: hidden;
+	background-position: -14px 41px;
 }
 .block-data-3 {
 	padding: 0;
@@ -540,9 +667,13 @@ a:hover{
 .block-data-3 span {
 	display:block;
 }
-.services-wrap{
-	background:#f4f4f4;
-	padding:97px 0;
+.services-wrap {
+	background: #f4f4f4;
+	padding: 20px 0;
+}
+.mainservis {
+	position: relative;
+	top: -18px;
 }
 .services-colum{
 	padding:0;
@@ -1217,13 +1348,17 @@ background:#FF9200 !important;
 	margin:0;
 	display:block;
 }
+.clear{
+	clear:both;
+}
 .footer-wrap .footer-colum ul li a {
 	padding: 0;
 	margin: 0;
 	color: #C6C6C6;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 600;
 	letter-spacing: -1px;
+	/* font-weight: bold; */
 }
 .howhide #myCarousel {
 	display: none;

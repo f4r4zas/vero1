@@ -46,46 +46,46 @@
 	font-size: 46px;
 	font-weight: 200;
 }
+.bgofrow {
+	background: url(images/bgabout.png) repeat 100% 100% !important;
+	padding: 45px 0px;
+}
+.bgofrow h1 {
+	font-size: 54px;
+	color: #fff;
+	font-weight: 700;
+}
+.block-row-2.nopadd {
+	padding-top: 0px;
+}
 	</style>
 	<body>
+		<div class="bgofrow">
+			<div class="container text-center">
+				<h1>How It Works</h1>
+				
+			</div>
+	</div>
 		
 		<div class="body-content">
+		
 			<div class="container">
 				<div class="col-sm-12">
-					<div class="form-wrap">
-					  <div class="block-row-21">
-						 <h2>How It Works</h2>
-						 </div>
-						<div class="steps-wrap">
-							<ul class="steps step2">
-								<li>
-									<a href="#">
-									<i class="glyphicon glyphicon-ok"></i>
-									</a>
-									<p class="dets1"></p>
-									<p class="dets12">Item Purchase</p>
-									
-								</li>
-								<li>
-										<a href="#">
-											<i class="glyphicon glyphicon-ok"></i>
-										</a>
-										<p class="dets1"></p>
-										<p class="dets12">Package Pickup & Delivery</p>
-								</li>
-								<li>
-										<a href="#">
-											<i class="glyphicon glyphicon-ok"></i>
-										</a>
-										<p class="dets1 nobod"></p>
-										<p class="dets12">Item Return/Exchange</p>
-								</li>
-							</ul>
-						
-						</div><!--steps-wrap-->
-            </div>
+				
+				<div class="block-row-1">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="block-data-1">
+					
+                    </div>
+                </div>
+            </div><!--row-->
         </div>
-        <div class="block-row-2">
+				
+				
+				
+				</div>
+        <div class="block-row-2 nopadd">
             <div class="row11">
                 <div class="col-sm-12">
                     
@@ -107,7 +107,7 @@
                         <div class="how-col-2">
                             <h5>Place Your Order:</h5>
                             <p>
-                                Provide the requested app details and information needed to service your request.
+                         Provide the requested app details and information needed to service your request.<br>Get  your cost estimate upfront.<br>Submit your request.       
                             </p>
                         </div>
                     </div>
