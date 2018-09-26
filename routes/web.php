@@ -56,3 +56,6 @@ Route::get('/about-us', 'Common@about');
 Route::get('/coverage', 'Common@coverage');
 Route::get('/service', 'Common@service');
 Route::get('/terms', 'Common@terms');
+Route::get('/help', 'Common@help');
+Route::get('/pricing', 'Common@pricing');
+Route::get('/insurace', 'Common@insurance');

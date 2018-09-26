@@ -177,25 +177,34 @@ class Registration extends Controller
 
        // $id = Session::get("register-id");
         $id = "5b05d7a456c7c72a8000126a";
+        $allInsurance = array();
+
 
         $driver = $request->file("pic")["driver_license"];
         $carInsurance = $request->file("pic")["car_insurance"];
         $passport = $request->file("pic")["passport"];
         $profile = $request->file("pic")["profile"];
+        $insurace = $request->file("pic")["insurance_pic"];
 
         //Move Uploaded File
         $destinationPath = 'uploads';
         $time = time();
 
+        foreach($insurace as $insurance_pic){
+                $allInsurance[] = $time."-".$insurance_pic->getClientOriginalName();
+                $insurance_pic->move($destinationPath,$time."-".$insurance_pic->getClientOriginalName());                
+        }
+
+        
         $picDriver = $time."-".$driver->getClientOriginalName();
         $picCarInsurance = $time."-".$carInsurance->getClientOriginalName();
         $picPassport = $time."-".$passport->getClientOriginalName();
         $picProfile = $time."-".$profile->getClientOriginalName();
 
-        $driver->move($destinationPath,$time."-".$picDriver);
-        $carInsurance->move($destinationPath,$time."-".$picCarInsurance);
-        $passport->move($destinationPath,$time."-".$picPassport);
-        $profile->move($destinationPath,$time."-".$picProfile);
+        $driver->move($destinationPath,$picDriver);
+        $carInsurance->move($destinationPath,$picCarInsurance);
+        $passport->move($destinationPath,$picPassport);
+        $profile->move($destinationPath,$picProfile);
 
 
         $client = new \MongoDB\Client("mongodb://localhost:27017");
@@ -203,7 +212,8 @@ class Registration extends Controller
 
 
         $pics = array(
-            "pictures" => array("driver_license"=>$picDriver,"car_insurance"=>$picCarInsurance,"passport"=>$picPassport,"profile"=>$picProfile)
+"pictures" => array("driver_license"=>$picDriver,"car_insurance"=>$picCarInsurance,"passport"=>$picPassport,"profile"=>$picProfile,
+    "insurance_pic"=>$allInsurance)
         );
 
         $result = $collection->updateOne(array("_id"=>new \MongoDB\BSON\ObjectId($id)),array('$set' => $pics));
