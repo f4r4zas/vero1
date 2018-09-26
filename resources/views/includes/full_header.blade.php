@@ -106,7 +106,7 @@
 	               <div class="">
 			                    				                                                      
 	                                        
-				   <h1 class="header-title">VERO 1 professional services for all your home maintenance needs, </h1>
+				   <h1 class="header-title">VERO 1 professional services for all your home maintenance needs </h1>
 				   <h2>Everything you need to offer quick, convenient store-to-door delivery to your customers. Take your business to the next level with one-hour, same-day delivery options. Start delivering within a few minutes.</h2><div class="clear"></div>
 					<div class="header-buttons animation animate-down scroll-visible" style="">
 			             <a href="#" class="button button--large default" target="">Get in touch</a>

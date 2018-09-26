@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 26),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'vero@techopialabs.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'vero1@techopialabs.com'),
         'name' => env('MAIL_FROM_NAME', 'vero'),
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', ''),
+    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('vero@techopialabs.com'),
+    'username' => env('vero1@techopialabs.com'),
 
-    'password' => env('Vero123%'),
+    'password' => env('*jf]iW+CVpkj'),
 
     /*
     |--------------------------------------------------------------------------

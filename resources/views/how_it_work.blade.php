@@ -67,7 +67,7 @@
 			</div>
 	</div>
 		
-		<div class="body-content">
+		<div class="body-content12">
 		
 			<div class="container">
 				<div class="col-sm-12">
