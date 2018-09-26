@@ -8,6 +8,7 @@
                     <li><a href="{{ URL::to("/driver-register") }}">Sign up</a></li>
                     <li><a href="{{ URL::to("/login") }}">Log in</a></li>
                     <li><a href="#">Driver Store</a></li>
+                    <li><a href="{{ URL::to("/pricing") }}">Pricing</a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">
@@ -31,7 +32,12 @@
 			<div class="col-sm-2 footer-colum">
                 <h4>work with us</h4>
                 <ul>
+<<<<<<< HEAD
                     <li><a href="#">Become a Driver</a></li>
+=======
+                    <li><a href="#">Become a VERO s1 Driver</a></li>
+                    <li><a href="{{ URL::to("/insurace") }}">INSURANCE</a></li>
+>>>>>>> 9b63864ef5ba7a532812218eb65450c4bb5e08c3
                     <li><a href="#">Careers</a></li>
                 </ul>
             </div>
@@ -45,10 +51,9 @@
             <div class="col-sm-2 footer-colum">
                 <h4>live support</h4>
                 <ul>
-                    <li><a href="#">0203 308 9943</a></li>
+                   <!--  <li><a href="#">0203 308 9943</a></li> -->
+                    <li><a href="{{ URL::to("/help") }}">Help</a></li>
                     <li><a href="#">support@vero1.com</a></li>
-					
-					
                 </ul>
 				<ul class="social">
 				<li><a href="#" class=""><img src="images/fb.png"/></a>

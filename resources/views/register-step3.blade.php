@@ -62,7 +62,7 @@
 
                             <label for="imgfile" class="custom-file-upload">
                                 <i class="far fa-file-image"></i>
-                                <input type="file" required name="pic[driver_license]">
+                                <input multiple type="file" required name="pic[driver_license]">
                             </label>
                         </div>
                         <div class="form-group col-md-6">
@@ -89,6 +89,21 @@
                                 <input type="file" required name="pic[profile]">
                             </label>
                         </div>
+
+
+                        <div class="form-group col-md-6">
+                            <span>Upload insurance documents</span>
+                            <label for="imgfile" class="custom-file-upload">
+                                <i class="far fa-file-image"></i>
+                                <input multiple  type="file" required name="pic[insurance_pic][]">
+                            </label>
+                        </div>
+
+                        <!-- <div class="form-group col-md-6">
+                            <span>Insurance Expiration Date</span>
+                                <input type="text" required id="insurace_exp_date" class="fonto" name="insurace_exp_date">
+                        </div> -->
+
                     </div>
                     <div class="submit-row">
                         <div class="submit-button col-md-12">
@@ -104,5 +119,8 @@
 <script>
     $(document).ready(function(){
         $("#registrationForm3").validate();
+
+        $('#insurace_exp_date').datepicker();
+
     });
 </script>

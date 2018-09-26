@@ -36,4 +36,16 @@ class Common extends Controller
     public function terms(){
         return view("terms");
     }
+
+    public function help(){
+        return view("help");
+    }
+
+    public function pricing(){
+        return view("pricing");
+    }
+
+    public function insurance(){
+        return view("insurance");
+    }
 }
