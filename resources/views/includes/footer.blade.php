@@ -32,6 +32,7 @@
 			<div class="col-sm-2 footer-colum">
                 <h4>work with us</h4>
                 <ul>
+                    <li><a href="#">Become a Driver</a></li>
                     <li><a href="#">Become a VERO s1 Driver</a></li>
                     <li><a href="{{ URL::to("/insurace") }}">INSURANCE</a></li>
                     <li><a href="#">Careers</a></li>

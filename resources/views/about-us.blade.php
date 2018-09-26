@@ -192,7 +192,7 @@
 						
 						<p>VERO 1’s goal is to provide the ultimate in convenience from home, enabling users to save time and be more productive with their daily lives. VERO 1’s mission is to be the world’s leading on demand delivery, concierge, and courier service whenever and wherever it is needed.</p>
 						<p>The application provides the ultimate in convenience to retailers and users. It is cost effective and saves users valuable time, hassles, and gas. VERO 1 users are able to avoid long lines, traffic, cold weather, congestion, delays, and parking. VERO 1 enables users to be more productive, get more done or just relax while their errands and needs are being taken care of for them in a timely manner.</p>
-						<p>Whatever your needs, VERO 1 has you covered.</p>
+						<p>Whatever  your needs, VERO 1 has we covered.</p>
 					
 					</div>	
 					<div class="clearfix"></div>
@@ -200,11 +200,11 @@
 				</div>
 				<div class="sectionr">
 					<div class="col-md-6 col-sm-12 col-lg-6">
-						<h2>VERO 1 provides you dedicated secure, friendly, and reliable service</h2>
+						<h2>VERO 1 provides we dedicated secure, friendly, and reliable service</h2>
 						
-						<p>VERO 1 provides you dedicated secure, friendly, and reliable service from the comfort of your home or whererever you are on the go throughout the world.   VERO1 is there is handle all your needs with just a click.
+						<p>VERO 1 provides we dedicated secure, friendly, and reliable service from the comfort of your home or whererever we are on the go throughout the world.   VERO1 is there is handle all  your needs with just a click.
 						<br>
-						Let VERO 1 take care of whatever you need wherever you need it so you can be more productive and free.</p>
+						Let VERO 1 take care of whatever we need wherever we need it so we can be more productive and free.</p>
 					
 					</div>	
 					<div class="col-md-6 col-sm-12 col-lg-6 cntr">
@@ -229,7 +229,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Pioneering</h5>
-						<p>You prefer the road less travelled. You favour outcomes over process. You aren’t afraid to take risks; you know that failure is sometimes the price of success.</p>
+						<p>we prefer the road less travelled. we favour outcomes over process. we aren’t afraid to take risks; we know that failure is sometimes the price of success.</p>
 				</div>
 				
 			</div>
@@ -239,7 +239,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Integrity</h5>
-						<p>You prefer the road less travelled. You favour outcomes over process. You aren’t afraid to take risks; you know that failure is sometimes the price of success.</p>
+						<p>We do the right thing – especially when nobody is looking. We speak your mind and don’t defer to authority. We fight for what you think is right. We care about the impact your actions have on the world around you.</p>
 				</div>
 				
 			</div>
@@ -248,8 +248,8 @@
 					<img src="images/arr.png" />
 				</div>
 				<div class="col-lg-10 col-md-10">
-						<h5>Item return/exchange</h5>
-						<p>You find ways to get things done; you make it yourself if it doesn’t exist. You look to do things in new and better ways. You like to turn your mind to challenges outside your day job. You see the wood for the trees; you keep one eye on next to better prepare for now.</p>
+						<h5>Resourcefulness</h5>
+						<p>we find ways to get things done; we make it  yourself if it doesn’t exist. we look to do things in new and better ways. we like to turn  your mind to challenges outside  your day job. we see the wood for the trees; we keep one eye on next to better prepare for now.</p>
 				</div>
 				
 			</div>
@@ -258,8 +258,8 @@
 					<img src="images/fork.png" />
 				</div>
 				<div class="col-lg-10 col-md-10">
-						<h5>Eats and carry-out delivery</h5>
-						<p>You look past the superficial to focus on what really matters. You ask tough questions to ensure better outcomes. You challenge assumptions and expectations no matter the source. You approach challenges from unusual angles; you know the obvious answer is rarely the best one.</p>
+						<h5>Curiosity</h5>
+						<p>we look past the superficial to focus on what really matters. we ask tough questions to ensure better outcomes. we challenge assumptions and expectations no matter the source. we approach challenges from unusual angles; we know the obvious ans your is rarely the best one.</p>
 				</div>
 				
 			</div>
@@ -270,7 +270,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Impact</h5>
-						<p>You’re always looking for opportunities to make a big difference. You seek the best possible returns when choosing where to invest your time. Your colleagues know they can rely on you to do great work that makes a difference.</p>
+						<p>we’re always looking for opportunities to make a big difference. we seek the best possible returns when choosing where to invest  your time.  your colleagues know they can rely on we to do great work that makes a difference.</p>
 				</div>
 				
 			</div>
@@ -280,7 +280,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Ownership</h5>
-						<p>You take responsibility for your actions and decisions. You rise to the challenge quickly and easily; you do what it takes to make things happen. You’re grateful for the help of colleagues but you’ll do it yourself where necessary. You know the buck stops with you; you like it that way.</p>
+						<p>we take responsibility for  your actions and decisions. we rise to the challenge quickly and easily; we do what it takes to make things happen. we’re grateful for the help of colleagues but we’ll do it  yourself where necessary. we know the buck stops with we; we like it that way.</p>
 				</div>
 				
 			</div>

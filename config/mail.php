@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'vero1@techopialabs.com'),
-        'name' => env('MAIL_FROM_NAME', 'vero1@techopialabs.com'),
+        'name' => env('MAIL_FROM_NAME', 'vero'),
     ],
 
     /*
@@ -86,7 +86,7 @@ return [
 
     'username' => env('vero1@techopialabs.com'),
 
-    'password' => env('Vero123%'),
+    'password' => env('*jf]iW+CVpkj'),
 
     /*
     |--------------------------------------------------------------------------

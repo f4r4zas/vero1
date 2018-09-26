@@ -155,6 +155,11 @@ body{
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.block-data-1 {
+	/* margin-left: 37px !important; */
+	padding-left: 81px;
+}
+
 .text.fade-in.right {
 	margin-left: 100px;
 }
@@ -248,7 +253,7 @@ a:hover{
 	clear:both;
 }
 .bgs {
-	background: url(../images/5.jpg);
+	background: url(../images/6.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -481,12 +486,17 @@ a:hover{
 	top: 6px;
 }
 /*index*/
+.body-content12 {
+	padding: 40px 0;
+	margin: 0;
+	overflow: hidden;
+}
 .block-row-1 {
 	padding: 0;
 	margin: 0;
 	height: 585px;
 	background: url(../images/iphone-mockup.png) no-repeat left;
-	background-size: 60%;
+	background-size: 55%;
 }
 .block-data-1 {
 	padding: 0;
