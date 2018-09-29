@@ -86,7 +86,6 @@
 
 	</style>
 <div class="container cov">
-    
 		<div class="body-content">
 			<div class="container">
 				<div class="col-sm-12">
@@ -98,25 +97,24 @@
 							<ul class="steps step2">
 								<li>
 									<a href="#">
-									<i class="glyphicon glyphicon-ok"></i>
+										<i class="glyphicon glyphicon-ok"></i>
 									</a>
 									<p class="dets1"></p>
-									<p class="dets12">Item Purchase</p>
-									
+									<p class="dets12">Item Purchase</p>		
 								</li>
 								<li>
-										<a href="#">
-											<i class="glyphicon glyphicon-ok"></i>
-										</a>
-										<p class="dets1"></p>
-										<p class="dets12">Package Pickup & Delivery</p>
+									<a href="#">
+										<i class="glyphicon glyphicon-ok"></i>
+									</a>
+									<p class="dets1"></p>
+									<p class="dets12">Package Pickup & Delivery</p>
 								</li>
 								<li>
-										<a href="#">
+									<a href="#">
 											<i class="glyphicon glyphicon-ok"></i>
-										</a>
-										<p class="dets1 nobod"></p>
-										<p class="dets12">Item Return/Exchange</p>
+									</a>
+									<p class="dets1 nobod"></p>
+									<p class="dets12">Item Return/Exchange</p>
 								</li>
 							</ul>
 						
