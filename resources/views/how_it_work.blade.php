@@ -58,6 +58,37 @@
 .block-row-2.nopadd {
 	padding-top: 0px;
 }
+
+
+.iphonescreen {
+	background: url("http://xinkyo.firebird.jp/codepen/iphone_pic.png");
+	position: relative;
+	height: 832px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.carousel-inner {
+	position: relative;
+	width: 354px;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 800px;
+}
+.active {
+	display: block !important;
+}
+.iphonescreen img {
+	height: 727px !important;
+	padding-top: 106px;
+}
+#myCarousel22 .glyphicon {
+	color: black;
+}
+
+.sliderin li {
+	display: none;
+}
 	</style>
 	<body>
 		<div class="bgofrow">
@@ -69,27 +100,60 @@
 		
 		<div class="body-content12">
 		
-			<div class="container">
-				<div class="col-sm-12">
+		<div class="container">
+  
+  <div class="iphonescreen">
+  <div id="myCarousel22" class="carousel slide" data-ride="carousel" data-interval="10000">
+    <!-- Indicators -->
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Los Angeles" style="width:100%;">
+		
+      </div>
+
+      <div class="item">
+        <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="Chicago" style="width:100%;">
+		
+      </div>
+    
+      <div class="item">
+        <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="New york" style="width:100%;">
+		
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel22" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel22" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	</div>
+	
+
+
+
+
+
+  </div>
+			
 				
-				<div class="block-row-1">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="block-data-1">
-					
-                    </div>
-                </div>
-            </div><!--row-->
-        </div>
 				
 				
-				
-				</div>
+			
         <div class="block-row-2 nopadd">
             <div class="row11">
                 <div class="col-sm-12">
-                    
-                    <div class="how-row-1">
+                   <ul class="sliderin">
+                   <li class="active">
+					<div class="how-row-1">
                         <div class="how-col-1">
                             <img src="images/choos-works.png">
                         </div>
@@ -100,6 +164,7 @@
                             </p>
                         </div>
                     </div>
+					</li><li>
                     <div class="how-row-1 space">
                         <div class="how-col-1">
                             <img src="images/order-works.png">
@@ -111,6 +176,7 @@
                             </p>
                         </div>
                     </div>
+					</li><li>
                     <div class="how-row-1 space2">
                         <div class="how-col-1">
                             <img src="images/collect-works.png">
@@ -121,7 +187,20 @@
                                Enjoy all the convenience, time, and money you have saved as your driver/professional promptly fulfills your service request.  
                             </p>
                         </div>
-                    </div>
+                    </div></li>
+					<li>
+                    <div class="how-row-1 space2">
+                        <div class="how-col-1">
+                            <img src="images/collect-works.png">
+                        </div>
+                        <div class="how-col-collect-2">
+                            <h5>Receive and Enjoy:</h5>
+                            <p>
+                               Enjoy all the convenience, time, and money you have saved as your driver/professional promptly fulfills your service request.  
+                            </p>
+                        </div>
+                    </div></li>
+					</ul>
                 </div>
                
             </div><!--row-->
@@ -131,6 +210,32 @@
 			</div>
     </div><!--container-->
 </div>
+<script>
+
+$('#myCarousel22').bind('slide.bs.carousel', function (e) {
+
+if(e.direction == 'left')
+{
+		if($('.sliderin').find('.active').next().length){
+			$('.sliderin').find('.active').removeClass('active').next().addClass('active');
+		} else {
+			$('.sliderin').find('.active').removeClass('active');
+			$('.sliderin > li').first().addClass('active');
+		}
+} else if(e.direction == 'right')
+{
+	if($('.sliderin').find('.active').prev().length){
+			$('.sliderin').find('.active').removeClass('active').prev().addClass('active');
+		} else {
+			$('.sliderin').find('.active').removeClass('active');
+			$('.sliderin > li').last().addClass('active');
+		}
+}
+		
+});
+
+
+</script>
 <div id="body2">
 @include("includes.footer")
 </div>

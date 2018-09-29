@@ -3,29 +3,34 @@
 
 @include("includes.full_header")
 </span>
+<style>
+.bgofrow h1 {
+	font-size: 54px;
+	color: #fff;
+	font-weight: 700;
+}
+.bgofrow {
+	background: url(images/bgabout.png) repeat 100% 100% !important;
+	padding: 45px 0px;
+}
+.body-content {
+	padding: 0px 0;
+	margin: 0;
+	overflow: hidden;
+}
+.faq .bgofrow {
+	margin-bottom: 20px;
+}
+</style>
 
 <div class="body-content faq">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="form-wrap">
-                <h1>FAQ</h1>
-                <div class="steps-wrap">
-                    <ul class="steps">
-                        <li>
-                            <a href="#"><i class="glyphicon glyphicon-ok"></i></a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-ok"></i></a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-ok"></i></a></li>
-                    </ul>
-                    <ul class="details faqwidth">
-                        <li><p>Questions For Item Purchase</p></li>
-                        <li><p>Questions For Package Pickup & Delivery</p></li>
-                        <li><p>Questions For Item Return/Exchange</p></li>
-                    </ul>
-                </div><!--steps-wrap-->
-
-            </div>
-        </div><!--container-->
-    </div>
+<div class="bgofrow">
+			<div class="container text-center">
+				   <h1>FAQ</h1>
+				
+			</div>
+	</div>
+ 
     <div class="container">
         <div class="col-md-12 col-sm-12 col-xs-12">
 

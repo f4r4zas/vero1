@@ -280,7 +280,7 @@ a:hover{
 .specialhq a:hover {
 	color: black !important;
 }
-.carousel-inner > .item {
+#myCarousel .carousel-inner > .item {
 	-webkit-transition: -webkit-transform .9s ease-in-out;
 	-o-transition: -o-transform .9s ease-in-out;
 	transition: transform .9s ease-in-out;
@@ -290,7 +290,7 @@ a:hover{
 	perspective: 1000px;
 }
 
- .carousel-inner > .item {
+#myCarousel  .carousel-inner > .item {
     -webkit-transition-property: opacity !important;
     transition-property: opacity !important;
 	 transition-duration: 4s;
@@ -549,7 +549,9 @@ a:hover{
 .how-row-1 {
 	padding: 70px 0 0 0;
 	margin: 0;
-	overflow:hidden;
+	overflow: hidden;
+	float: right;
+	max-width: 50%;
 }
 .how-row-1 .how-col-1{
 	float:left;
@@ -636,14 +638,7 @@ a:hover{
 	color: #5b5b64;
 	line-height: 25px;
 }
-.space{
-	padding-left: 228px;
-	margin:0;
-}
-.space2{
-	padding-left: 479px;
-	margin:0;
-}
+
 .block-row-3 {
 	padding: 0px 0 0 0;
 	margin: 0 0 53px 0;
