@@ -280,7 +280,7 @@ a:hover{
 .specialhq a:hover {
 	color: black !important;
 }
-#myCarousel .carousel-inner > .item {
+ .carousel-inner > .item {
 	-webkit-transition: -webkit-transform .9s ease-in-out;
 	-o-transition: -o-transform .9s ease-in-out;
 	transition: transform .9s ease-in-out;
@@ -290,7 +290,7 @@ a:hover{
 	perspective: 1000px;
 }
 
-#myCarousel  .carousel-inner > .item {
+  .carousel-inner > .item {
     -webkit-transition-property: opacity !important;
     transition-property: opacity !important;
 	 transition-duration: 4s;
@@ -645,7 +645,7 @@ a:hover{
 	background: url(../images/iphone-mockup-2.png) no-repeat left;
 	background-size: 60%;
 	overflow: hidden;
-	background-position: -14px 41px;
+	background-position: 8px 41px;
 }
 .block-data-3 {
 	padding: 0;

@@ -520,7 +520,10 @@
     <h3 class="text-large">
       Need something else?
     </h3>
-  <a id="new-request-btn" class="btn btn-primary" href="/hc/en-us/requests/new?ticket_form_id=724707">Contact Support</a>
+	<button type="submit" class="btn btn-primary vero-btn1" id="new-request-btn">
+                                 Contact Support
+                                </button>
+  
   </section>
 </section>
 

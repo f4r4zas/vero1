@@ -59,11 +59,16 @@
 	padding-top: 0px;
 }
 
+.backgorundofiphone {
+	background: url("images/illsu.jpg");
+	height: 542px;
+	margin-bottom: 91px;
+}
 
 .iphonescreen {
-	background: url("http://xinkyo.firebird.jp/codepen/iphone_pic.png");
+	background: url("https://cdn.lyft.com/pagelauncherdatastore/phone@1x.c7273ad8.png");
 	position: relative;
-	height: 832px;
+
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -79,15 +84,20 @@
 	display: block !important;
 }
 .iphonescreen img {
-	height: 727px !important;
-	padding-top: 106px;
+	height: 597px !important;
+	padding-top: 162px;
+	width: 299px !important;
+	padding-left: 59px;
 }
 #myCarousel22 .glyphicon {
-	color: black;
+	color: white;
 }
-
 .sliderin li {
 	display: none;
+}
+.zropad{
+	
+	padding:0 !important;
 }
 	</style>
 	<body>
@@ -98,12 +108,12 @@
 			</div>
 	</div>
 		
-		<div class="body-content12">
-		
+		<div class="body-content12 zropad">
+		<div class="backgorundofiphone">
 		<div class="container">
   
   <div class="iphonescreen">
-  <div id="myCarousel22" class="carousel slide" data-ride="carousel" data-interval="10000">
+  <div id="myCarousel22" class="carousel slide" data-ride="carousel" data-interval="1000">
     <!-- Indicators -->
     
 
@@ -144,7 +154,7 @@
 
   </div>
 			
-				
+			</div>	
 				
 				
 			
