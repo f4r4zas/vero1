@@ -336,6 +336,7 @@ a:hover{
 	margin: 0;
 	text-align: left;
 	padding-left: 4%;
+	padding-left: 6px !important;
 }
 .top-nav ul {
 	padding: 0;
@@ -343,6 +344,7 @@ a:hover{
 	list-style: none;
 	line-height: 40px;
 	margin-left: 20px;
+	margin-left: 0 !important;
 }
 .vero-btn1{
 	padding: 10px 21px;
@@ -371,7 +373,7 @@ a:hover{
 .top-nav li {
 	margin: 0;
 	display: inline;
-	padding: 0 18px;
+	padding: 0 17px;
 }
 .top-nav-bg .top-nav a {
 	margin: 0;

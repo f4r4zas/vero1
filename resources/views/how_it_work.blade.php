@@ -13,6 +13,9 @@
 	padding: 0 !important;
 	text-align: center;
 }
+.sliderin p {
+	margin-bottom: 45px !important;
+}
 	
 .dets {
 	padding: 0;
@@ -60,10 +63,11 @@
 }
 
 .backgorundofiphone {
-	background: url("images/illsu.jpg");
+	background: url("http://184.72.97.15/vero/images/6.jpg");
 	height: 542px;
 	margin-bottom: 91px;
 }
+
 
 .iphonescreen {
 	background: url("https://cdn.lyft.com/pagelauncherdatastore/phone@1x.c7273ad8.png");
@@ -79,6 +83,11 @@
 	overflow: hidden;
 	margin: 0 auto;
 	height: 800px;
+}
+.backgorundofiphone {
+	background: url("http://184.72.97.15/vero/images/6.jpg");
+	height: 490px;
+	margin-bottom: 150px;
 }
 .active {
 	display: block !important;
@@ -113,24 +122,24 @@
 		<div class="container">
   
   <div class="iphonescreen">
-  <div id="myCarousel22" class="carousel slide" data-ride="carousel" data-interval="1000">
+  <div id="myCarousel22" class="carousel slide" data-ride="carousel" data-interval="5000">
     <!-- Indicators -->
-    
+  
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="http://184.72.97.15/vero/images/iphone.jpg" alt="Los Angeles" style="width:100%;">
 		
       </div>
 
       <div class="item">
-        <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="Chicago" style="width:100%;">
+        <img src="http://184.72.97.15/vero/images/iphone.jpg" alt="Chicago" style="width:100%;">
 		
       </div>
     
       <div class="item">
-        <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="New york" style="width:100%;">
+        <img src="http://184.72.97.15/vero/images/iphone.jpg" alt="New york" style="width:100%;">
 		
       </div>
     </div>

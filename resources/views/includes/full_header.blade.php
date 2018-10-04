@@ -24,8 +24,8 @@
                                         <li><a href="{{ URL::to("/how-it-works") }}">How it works</a></li>
                                         <li><a href="{{ URL::to("/pricing") }}">Pricing</a></li>
                                         <li><a href="{{ URL::to("/about-us") }}">About us</a></li>
-                                        <li><a href="{{ URL::to("/service") }}">Services</a></li>
-                                        <li><a href="#">Driver Store</a></li>
+                                        <li><a href="{{ URL::to("/service") }}">User Services</a></li>
+                                        <li><a href="#">Driver Signup</a></li>
                                     </ul>
                                 </div>
                             </div>

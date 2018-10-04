@@ -22,7 +22,9 @@
 }
 .m-b-xl .text-large {
 	font-size: 23px;
-}.container.m-b-xl ul {
+	margin: 25px 0px;
+}
+.container.m-b-xl ul {
 	line-height: ;
 	list-style: disc;
 }
@@ -37,7 +39,7 @@
 	text-decoration: underline;
 }
 .m-b-xl .text-pink  a {
-	color: #a10860;
+	color: black;
 	
 }
 .m-b-xl .text-pink.m-b-s {
@@ -386,99 +388,8 @@
           
         </section>
       
-        <section class="m-y-l" id="360000293648">
-          <h3 class="text-large">
-            
-
-            Express Drive Rental Car Program
-          </h3>
-          
-          <p>
-            
-          </p>
-
-          
-            <ul>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115013080108-Express-Drive-overview">Express Drive overview</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/360001562167-Rental-car-pickups-renewals-and-returns">Rental car pickups, renewals, and returns</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/360001562707-Insurance-with-Express-Drive">Insurance with Express Drive</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/360001550508-Rental-car-maintenance-and-repairs">Rental car maintenance and repairs</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/360001562247-Express-Drive-earnings-and-charges">Express Drive earnings and charges</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/360001562447-Rental-Rewards-and-bonuses">Rental Rewards and bonuses</a>
-                </li>
-              
-            </ul>
-
-            
-
-          
-        </section>
       
-        <section class="m-y-l" id="115003494868">
-          <h3 class="text-large">
-            
-
-            Hot Spots
-          </h3>
-          
-          <p>
-            
-          </p>
-
-          
-            <ul>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115013077428-Giving-Rides-at-Las-Vegas-Hot-Spots">Giving Rides at Las Vegas Hot Spots</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115012925667-Giving-Rides-at-Atlanta-s-Mercedes-Benz-Stadium">Giving Rides at Atlanta's Mercedes-Benz Stadium</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115013080868-Giving-Rides-at-Chicago-Hot-Spots">Giving Rides at Chicago Hot Spots</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115013081288-Giving-Rides-at-Denver-Hot-Spots">Giving Rides at Denver Hot Spots</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115013081608-Giving-Rides-at-Walt-Disney-World">Giving Rides at Walt Disney World</a>
-                </li>
-              
-                <li class="text-pink m-b-s">
-                  <a href="/hc/en-us/articles/115012927887-Giving-Rides-at-Sacramento-s-Raley-Field">Giving Rides at Sacramento's Raley Field</a>
-                </li>
-              
-            </ul>
-
-            
-              <a href="/hc/en-us/sections/115003494868-Hot-Spots" class="m-l-l p-l">
-                See all 9 articles
-              </a>
-            
-
-          
-        </section>
+      
       
         <section class="m-y-l" id="115003497027">
           <h3 class="text-large">

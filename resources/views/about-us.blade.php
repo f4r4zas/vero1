@@ -19,7 +19,7 @@
 	margin: 0;
 	color: #464646;
 	font-size: 16px;
-	font-weight: 600;
+	font-Weight: 600;
 	margin-top: -18px;
 	border-top: 3px solid #FF9200;
 	margin-left: 55px;
@@ -33,7 +33,7 @@
 	margin: 0;
 	color: #464646;
 	font-size: 16px;
-	font-weight: 600;
+	font-Weight: 600;
 	margin-top: 34px;
 	position: relative;
 	
@@ -44,7 +44,7 @@
 }
 .block-row-21 h2 {
 	font-size: 46px;
-	font-weight: 200;
+	font-Weight: 200;
 }
 .cov .how-row-1 {
 	padding: 15px 0 0 0;
@@ -55,13 +55,13 @@
 	padding: 0 0 5px 0;
 	margin: 0;
 	font-size: 23px;
-	font-weight: 800;
+	font-Weight: 800;
 }
 .cov .how-row-1 .how-col-2 h5 {
 	padding: 0 0 5px 0;
 	margin: 0;
 	font-size: 23px;
-	font-weight: 800;
+	font-Weight: 800;
 }
 .row11 ul li {
 	font-size: 17px;
@@ -86,7 +86,7 @@
 .bgofrow h1 {
 	font-size: 54px;
 	color:#fff;
-	font-weight:700;
+	font-Weight:700;
 }
 
 .bgofrow {
@@ -102,7 +102,7 @@
 }
 .sectionr h2 {
 	font-size: 46px;
-	font-weight: 200;
+	font-Weight: 200;
 	max-width: 422px;
 	margin-top: 26px;
 }
@@ -110,14 +110,14 @@
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
-	font-weight: 400;
+	font-Weight: 400;
 	color: #5b5b64;
 	line-height: 25px;
 	margin-top: 43px;
 }
 .ones h2 {
 	font-size: 46px;
-	font-weight: 200;
+	font-Weight: 200;
 	max-width: 523px;
 	margin-top: 0px;
 }
@@ -125,7 +125,7 @@
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
-	font-weight: 400;
+	font-Weight: 400;
 	color: #5b5b64;
 	line-height: 25px;
 	margin-top: 16px;
@@ -135,7 +135,7 @@
 }
 .h2a {
 	font-size: 46px;
-	font-weight: 200;
+	font-Weight: 200;
 
 	margin-top: 26px;
 }
@@ -229,7 +229,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Pioneering</h5>
-						<p>we prefer the road less travelled. we favour outcomes over process. we aren’t afraid to take risks; we know that failure is sometimes the price of success.</p>
+						<p>We prefer the road less travelled. We favour outcomes over process. We aren’t afraid to take risks; We know that failure is sometimes the price of success.</p>
 				</div>
 				
 			</div>
@@ -249,7 +249,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Resourcefulness</h5>
-						<p>we find ways to get things done; we make it  yourself if it doesn’t exist. we look to do things in new and better ways. we like to turn  your mind to challenges outside  your day job. we see the wood for the trees; we keep one eye on next to better prepare for now.</p>
+						<p>We find ways to get things done; We make it  yourself if it doesn’t exist. We look to do things in new and better ways. We like to turn  your mind to challenges outside  your day job. We see the wood for the trees; We keep one eye on next to better prepare for now.</p>
 				</div>
 				
 			</div>
@@ -259,7 +259,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Curiosity</h5>
-						<p>we look past the superficial to focus on what really matters. we ask tough questions to ensure better outcomes. we challenge assumptions and expectations no matter the source. we approach challenges from unusual angles; we know the obvious ans your is rarely the best one.</p>
+						<p>We look past the superficial to focus on what really matters. We ask tough questions to ensure better outcomes. We challenge assumptions and expectations no matter the source. We approach challenges from unusual angles; We know the obvious ans your is rarely the best one.</p>
 				</div>
 				
 			</div>
@@ -270,7 +270,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Impact</h5>
-						<p>we’re always looking for opportunities to make a big difference. we seek the best possible returns when choosing where to invest  your time.  your colleagues know they can rely on we to do great work that makes a difference.</p>
+						<p>We’re always looking for opportunities to make a big difference. We seek the best possible returns when choosing where to invest  your time.  your colleagues know they can rely on We to do great work that makes a difference.</p>
 				</div>
 				
 			</div>
@@ -280,7 +280,7 @@
 				</div>
 				<div class="col-lg-10 col-md-10">
 						<h5>Ownership</h5>
-						<p>we take responsibility for  your actions and decisions. we rise to the challenge quickly and easily; we do what it takes to make things happen. we’re grateful for the help of colleagues but we’ll do it  yourself where necessary. we know the buck stops with we; we like it that way.</p>
+						<p>We take responsibility for  your actions and decisions. We rise to the challenge quickly and easily; We do what it takes to make things happen. We’re grateful for the help of colleagues but We’ll do it  yourself where necessary. We know the buck stops with We; We like it that way.</p>
 				</div>
 				
 			</div>
