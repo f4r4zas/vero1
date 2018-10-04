@@ -1,4 +1,74 @@
 @include('includes.header')
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDZ6v5rVNIY_XwJfCdIntpT1jNj0wLVReY&libraries=places"></script>
+
+     <script>
+        var placeSearch, autocomplete;
+        var componentForm = {
+            /*street_number: 'short_name',*/
+           /* route: 'long_name',*/
+            locality: 'long_name',
+            administrative_area_level_1: 'short_name',
+            country: 'long_name',
+            postal_code: 'short_name'
+        };
+
+
+
+        function initAutocomplete(){
+
+            var input = document.getElementById('home_address');
+            var searchBox = new google.maps.places.SearchBox(input);
+            //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            // Bias the SearchBox results towards current map's viewport.
+          /*  map.addListener('bounds_changed', function() {
+                searchBox.setBounds(map.getBounds());
+            });
+*/
+            autocomplete = new google.maps.places.Autocomplete(
+                /** @type {!HTMLInputElement} */(document.getElementById('home_address')),
+                {types: ['geocode'],  componentRestrictions: {country: "us"}
+                });
+            autocomplete.addListener('place_changed', fillInAddress);
+
+            // Get each component of the address from the place details
+            // and fill the corresponding field on the form.
+            /*for (var i = 0; i < place.address_components.length; i++) {
+                var addressType = place.address_components[i].types[0];
+                if (componentForm[addressType]) {
+                    var val = place.address_components[i][componentForm[addressType]];
+                    document.getElementById(addressType).value = val;
+                }
+            }*/
+
+        }
+
+
+        function fillInAddress() {
+
+            // Get the place details from the autocomplete object.
+            var place = autocomplete.getPlace();
+
+            for (var component in componentForm) {
+                document.getElementById(component).value = '';
+                document.getElementById(component).disabled = false;
+            }
+
+            // Get each component of the address from the place details
+            // and fill the corresponding field on the form.
+            for (var i = 0; i < place.address_components.length; i++) {
+                var addressType = place.address_components[i].types[0];
+                if (componentForm[addressType]) {
+                    var val = place.address_components[i][componentForm[addressType]];
+                    document.getElementById(addressType).value = val;
+                }
+            }
+        }
+
+        google.maps.event.addDomListener(window, 'load', initAutocomplete);
+    </script>
+
 <div class="drive-reg-banner">
     <div class="top-nav-bg">
         <div class="container">

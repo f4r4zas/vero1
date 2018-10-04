@@ -59,3 +59,5 @@ Route::get('/terms', 'Common@terms');
 Route::get('/help', 'Common@help');
 Route::get('/pricing', 'Common@pricing');
 Route::get('/insurace', 'Common@insurance');
+
+Route::post('/get-pricing', 'Pricing@calculatePricing');
