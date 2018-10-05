@@ -128,6 +128,10 @@
 		
 		
 		</form>
+
+		<div class="clear"></div>
+		<p class="discalmers">Sample fares are ride share estimates only and do not reflect variations due to discounts, traffic delays or other factors. Actual fares may vary. You agree to pay the fare shown upon confirming your ride request. If your route or destination changes on trip, your fare may change based on the rates above and other applicable taxes, tolls, charges and adjustments. Subject to VERO1 Terms of Service.<p>
+
 		
 
 
@@ -136,7 +140,7 @@
 				
 		</div>
 
-		<p class="discalmers">Sample fares are estimates only and do not reflect variations due to discounts, traffic delays or other factors. Actual fares may vary. You agree to pay the fare shown upon confirming your ride request. If your route or destination changes on trip, your fare may change based on the rates above and other applicable taxes, tolls, charges and adjustments. Subject to VERO1 Terms of Service.<p>
+	
 
 	</div><!-- Form -->
 </div>
