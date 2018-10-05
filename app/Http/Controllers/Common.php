@@ -48,4 +48,16 @@ class Common extends Controller
     public function insurance(){
         return view("insurance");
     }
+
+    public function privacy(){
+        return view("privacy");
+    }
+
+    public function career(){
+     return view("careers");   
+    }
+
+    public function partner(){
+        return view("partner");
+    }
 }

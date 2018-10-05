@@ -48,6 +48,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
+Route::post('/get-pricing', 'Pricing@calculatePricing');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faq', 'Common@faq')->name('home');
@@ -60,4 +61,7 @@ Route::get('/help', 'Common@help');
 Route::get('/pricing', 'Common@pricing');
 Route::get('/insurace', 'Common@insurance');
 
-Route::post('/get-pricing', 'Pricing@calculatePricing');
+Route::get('/privacy', 'Common@privacy');
+Route::get('/career', 'Common@career');
+Route::get('/partner', 'Common@partner');
+

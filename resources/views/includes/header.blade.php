@@ -54,7 +54,7 @@ function showPage() {
   document.getElementById("body").style.display = "block";
   document.getElementById("body").style.background = "transparent";
 
-if($("body2").length > 0){
+if($("#body2").length > 0){
     document.getElementById("body2").style.display = "block";  
 }
 

@@ -16,17 +16,17 @@
                 <ul>
                     <li><a href="{{ URL::to("/faq") }}">FAQ</a></li>
                     <li><a href="{{ URL::to("/terms") }}">Terms and Conditions</a></li>
-                    <li><a href="#">Privacy</a></li>
+                    <li><a href="{{ URL::to("/privacy") }}">Privacy</a></li>
                     <li><a href="{{ URL::to("/about-us") }}">About us</a></li>
                    
-                    <li><a href="#">press@vero1.com</a></li>
+                    <li><a href="#">Press</a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">
                 <h4>vero 1 for business</h4>
                 <ul class="mainservis">
                     <li class="servecadj"><a href="{{ URL::to("/service") }}" class="">Services</a></li>
-					<li class="servecadj2"><a href="#" class="">Partner with VERO 1</a></li>
+					<li class="servecadj2"><a href="{{ URL::to("/partner") }}" class="">Partner with VERO 1</a></li>
                 </ul>
             </div>
 			<div class="col-sm-2 footer-colum">
@@ -35,7 +35,7 @@
                     <li><a href="{{ URL::to("/driver-register") }}">Become a Driver</a></li>
                  
                     <li><a href="{{ URL::to("/insurace") }}">Insurance</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="{{ URL::to("/career") }}">Careers</a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">

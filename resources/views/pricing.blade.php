@@ -146,11 +146,11 @@
 
 <script type="text/javascript">
 
-var point_a ;
-            var point_b;
+	var point_a ;
+	var point_b;
 
-var distance; 
-var duration;
+	var distance; 
+	var duration;
 	
 	function initMap() {
 
