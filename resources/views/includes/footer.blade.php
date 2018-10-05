@@ -19,7 +19,7 @@
                     <li><a href="#">Privacy</a></li>
                     <li><a href="{{ URL::to("/about-us") }}">About us</a></li>
                    
-                    <li><a href="#">Press@vero1.com</a></li>
+                    <li><a href="#">Press</a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">

@@ -2,6 +2,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_token" content="{{ csrf_token() }}"/>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>VERO 1</title>
@@ -16,13 +18,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="/js/npm.js"></script><script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+
     <script src="{{ URL::to("js/bootstrap-datepicker.min.js") }}"></script>
-
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-
     <!-- JS -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
@@ -30,10 +31,13 @@
 "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDZ6v5rVNIY_XwJfCdIntpT1jNj0wLVReY&libraries=places"></script>
+
+    
+
+
+<!--     <script src="{{ URL::to("js/map_calc.js") }}"></script> -->
 
     <link rel="shortcut icon" href="{{ URL::to("favicon/12.png") }}" type="image/png">
     <link rel="icon" href="{{ URL::to("favicon/12.png") }}" type="image/png">
@@ -49,76 +53,16 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("body").style.display = "block";
   document.getElementById("body").style.background = "transparent";
-  document.getElementById("body2").style.display = "block";
+
+if($("body2").length > 0){
+    document.getElementById("body2").style.display = "block";  
+}
+
+  
 }
 </script>
 
-    <script>
-        var placeSearch, autocomplete;
-        var componentForm = {
-            /*street_number: 'short_name',*/
-           /* route: 'long_name',*/
-            locality: 'long_name',
-            administrative_area_level_1: 'short_name',
-            country: 'long_name',
-            postal_code: 'short_name'
-        };
-
-
-
-        function initAutocomplete(){
-
-            var input = document.getElementById('home_address');
-            var searchBox = new google.maps.places.SearchBox(input);
-            //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-            // Bias the SearchBox results towards current map's viewport.
-          /*  map.addListener('bounds_changed', function() {
-                searchBox.setBounds(map.getBounds());
-            });
-*/
-            autocomplete = new google.maps.places.Autocomplete(
-                /** @type {!HTMLInputElement} */(document.getElementById('home_address')),
-                {types: ['geocode'],  componentRestrictions: {country: "us"}
-                });
-            autocomplete.addListener('place_changed', fillInAddress);
-
-            // Get each component of the address from the place details
-            // and fill the corresponding field on the form.
-            /*for (var i = 0; i < place.address_components.length; i++) {
-                var addressType = place.address_components[i].types[0];
-                if (componentForm[addressType]) {
-                    var val = place.address_components[i][componentForm[addressType]];
-                    document.getElementById(addressType).value = val;
-                }
-            }*/
-
-        }
-
-
-        function fillInAddress() {
-
-            // Get the place details from the autocomplete object.
-            var place = autocomplete.getPlace();
-
-            for (var component in componentForm) {
-                document.getElementById(component).value = '';
-                document.getElementById(component).disabled = false;
-            }
-
-            // Get each component of the address from the place details
-            // and fill the corresponding field on the form.
-            for (var i = 0; i < place.address_components.length; i++) {
-                var addressType = place.address_components[i].types[0];
-                if (componentForm[addressType]) {
-                    var val = place.address_components[i][componentForm[addressType]];
-                    document.getElementById(addressType).value = val;
-                }
-            }
-        }
-
-        google.maps.event.addDomListener(window, 'load', initAutocomplete);
-    </script>
+   
 </head>
 
 <body onload="myFunction()"  style="" >
