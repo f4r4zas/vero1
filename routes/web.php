@@ -39,6 +39,7 @@ Route::post('/driver-register/2', 'Registration@registrationStep1');*/
 
 Route::get('/login','Auth\LoginController@showLoginForm');
 Route::post('/login','Auth\LoginController@doLogin');
+Route::post('password-reset', 'Auth\LoginController@passwordReset')->name('passwordReset');
 
 Route::post('/get_city', 'common_functions\LocationData@USCities');
 
