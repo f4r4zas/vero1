@@ -50,6 +50,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 Route::post('/get-pricing', 'Pricing@calculatePricing');
 
+Route::get("/reset-password",'customPasswordReset@sendEmail');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faq', 'Common@faq')->name('home');
 Route::get('/how-it-works', 'Common@how')->name('home');
@@ -65,3 +67,13 @@ Route::get('/privacy', 'Common@privacy');
 Route::get('/career', 'Common@career');
 Route::get('/partner', 'Common@partner');
 
+
+
+/* ====================================== ADMIN ====================================== */
+
+Route::prefix('admin')->group(function(){
+
+	Route::get('/', 'admin\Pages@index');
+
+	Route::get('/users', 'admin\Pages@users');
+});

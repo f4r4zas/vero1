@@ -1,10 +1,11 @@
 <?php 
 	
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
+
+use App\Http\Controllers\Controller;
 
 
-
-class Common extends Controller{
+class Pages extends Controller{
 
 	public function __construct()
     {
@@ -12,7 +13,21 @@ class Common extends Controller{
     }
 
     public function index(){
+    	return view("admin.dashboard");
+    }
 
+    public function users(){
+
+    	$client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+        $collection = $client->vero->users;
+
+//        print_r($collection);
+
+        $collectionData = $collection->find();
+
+        
+
+    	return view("admin.user")->with('users',$collectionData);	
     }
 
 }
