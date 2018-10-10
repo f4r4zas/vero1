@@ -64,7 +64,7 @@ class Registration extends Controller
         //echo implode(",",$param);
         print_r(http_build_query($param));
 
-        $urlDetails = '45.76.107.67:3000/register';
+        $urlDetails = 'http://ec2-54-174-240-101.compute-1.amazonaws.com:3000/register';
 
         $url = $urlDetails;
         $curl = curl_init();
@@ -101,8 +101,8 @@ class Registration extends Controller
         ]);
 
 
-        $client = new \MongoDB\Client("mongodb://localhost:27017");
-        $collection = $client->vero->user;
+        $client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+        $collection = $client->vero->users;
 
 
         $find = array('userEmail'=>$request->input("userEmail"));
@@ -154,8 +154,8 @@ class Registration extends Controller
 
         $id = Session::get("register-id");
 
-        $client = new \MongoDB\Client("mongodb://localhost:27017");
-        $collection = $client->vero->user;
+        $client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+        $collection = $client->vero->users;
 
         $result = $request->all();
 
@@ -204,7 +204,7 @@ class Registration extends Controller
 
 
         $client = new \MongoDB\Client("mongodb://localhost:27017");
-        $collection = $client->vero->user;
+        $collection = $client->vero->users;
 
 
         $pics = array(

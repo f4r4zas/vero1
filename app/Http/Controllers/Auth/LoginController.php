@@ -69,7 +69,7 @@ class LoginController extends Controller
             $mail->Port = 587; // most likely something different for you. This is the mailtrap.io port i use for testing. 
             $mail->Username = env("MAIL_USERNAME", "irfan@nextgeni.com");
             $mail->Password = env("MAIL_PASSWORD", "ubekjdyngmimnwxr");
-            $mail->setFrom(env("MAIL_USERNAME", "irfan@nextgeni.com"));
+            $mail->setFrom(env("MAIL_USERNAME", "vero1@techopialabs.com"));
             $mail->Subject = "Password Reset Link";
             $mail->MsgHTML("Your password reset link is <a href='".$url."'>".$url."<a/>");
             $mail->addAddress($user->email, "Recipient Name");

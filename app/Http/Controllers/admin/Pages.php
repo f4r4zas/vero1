@@ -20,14 +20,24 @@ class Pages extends Controller{
 
     	$client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
         $collection = $client->vero->users;
-
-//        print_r($collection);
-
         $collectionData = $collection->find();
 
-        
-
     	return view("admin.user")->with('users',$collectionData);	
+    }
+
+    public function pages(){
+
+
+        $client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+        $collection = $client->vero->pages;
+        $collectionData = $collection->find();
+
+        return view("admin.pages")->with('pages',$collectionData);
+    
+    }
+
+    public function createPage(){
+        return view("admin.page_create");        
     }
 
 }

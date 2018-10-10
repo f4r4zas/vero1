@@ -77,4 +77,8 @@ Route::prefix('admin')->group(function(){
 	Route::get('/', 'admin\Pages@index');
 
 	Route::get('/users', 'admin\Pages@users');
+
+	Route::get('/pages', 'admin\Pages@pages');
+
+	Route::get('/createPage', 'admin\Pages@createPage');
 });

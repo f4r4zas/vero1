@@ -25,12 +25,13 @@
                         <p>User Profile</p>
                     </a>
                 </li>
-                <!--<li>
-                    <a href="table.html">
+                <li>
+                    <a href="{{ URL::to("admin/pages") }}">
                         <i class="ti-view-list-alt"></i>
-                        <p>Table List</p>
+                        <p>Pages</p>
                     </a>
                 </li>
+                <!--
                 <li>
                     <a href="typography.html">
                         <i class="ti-text"></i>
