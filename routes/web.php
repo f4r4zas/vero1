@@ -78,7 +78,16 @@ Route::prefix('admin')->group(function(){
 
 	Route::get('/users', 'admin\Pages@users');
 
-	Route::get('/pages', 'admin\Pages@pages');
+	Route::get('/pages', 'admin\Pages@pages')->name("admin.pages");
 
-	Route::get('/createPage', 'admin\Pages@createPage');
+	Route::get('/createPage', 'admin\Pages@createPage')->name("admin.create");
+
+	Route::post('/insertPage', 'admin\Pages@pageInsert')->name("insert-page");
+
+	Route::post('/removePage', 'admin\Pages@pageRemove')->name("remove-page");
+
+	Route::post('/editPage', 'admin\Pages@pageUpdateView')->name("edit-page");
+
+	Route::post('/updatePage', 'admin\Pages@pageUpdate')->name("update-page");
+
 });
