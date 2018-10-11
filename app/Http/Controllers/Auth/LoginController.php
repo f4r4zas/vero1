@@ -6,6 +6,11 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use App\User;
+use DB;
+use Carbon\Carbon;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 class LoginController extends Controller
 {
@@ -47,7 +52,7 @@ class LoginController extends Controller
             $token = app('auth.password.broker')->createToken($user);
 
             $reset = DB::table('password_resets')->insert([
-                'email' => "irfan@nextgeni.com",
+                'email' => $user->email,
                 'token' => $token,
                 'created_at' => Carbon::now(),
             ]);
@@ -64,14 +69,15 @@ class LoginController extends Controller
             $mail->isSMTP(); // tell to use smtp
             $mail->CharSet = "utf-8"; // set charset to utf8
             $mail->SMTPAuth = true;  // use smpt auth
-            $mail->SMTPSecure = "tls"; // or ssl
-            $mail->Host = "smtp.gmail.com";
-            $mail->Port = 587; // most likely something different for you. This is the mailtrap.io port i use for testing. 
-            $mail->Username = env("MAIL_USERNAME", "irfan@nextgeni.com");
-            $mail->Password = env("MAIL_PASSWORD", "ubekjdyngmimnwxr");
+            $mail->SMTPSecure = env("MAIL_ENCRYPTION", "ssl"); // or ssl
+            $mail->Host = env("MAIL_HOST", "mail.techopialabs.com");
+            $mail->Port = env("MAIL_PORT", 465); // most likely something different for you. This is the mailtrap.io port i use for testing. 
+            $mail->Username = env("MAIL_USERNAME", "vero1@techopialabs.com");
+            $mail->Password = env("MAIL_PASSWORD", "*jf]iW+CVpkj");
             $mail->setFrom(env("MAIL_USERNAME", "vero1@techopialabs.com"));
             $mail->Subject = "Password Reset Link";
-            $mail->MsgHTML("Your password reset link is <a href='".$url."'>".$url."<a/>");
+            $mail->isHTML(true);
+			$mail->Body = ("Your password reset link is <a href='".$url."'>".$url."<a/>");
             $mail->addAddress($user->email, "Recipient Name");
             $mail->send();
         } catch (phpmailerException $e) {
