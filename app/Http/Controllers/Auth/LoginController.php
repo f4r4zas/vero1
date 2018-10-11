@@ -11,6 +11,7 @@ use DB;
 use Carbon\Carbon;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Illuminate\Support\Facades\URL;
 
 class LoginController extends Controller
 {
@@ -56,7 +57,8 @@ class LoginController extends Controller
                 'token' => $token,
                 'created_at' => Carbon::now(),
             ]);
-            $url = env("APP_URL", "http://localhost/") . "/password/reset/" . $token; 
+            //$url = env("APP_URL", "http://localhost/") . "/password/reset/" . $token; 
+			$url  = URL::to("/password/reset/" . $token);
             $this->sendPaswordResetEmail($user, $url);
             return redirect()->back();
         }
@@ -77,7 +79,8 @@ class LoginController extends Controller
             $mail->setFrom(env("MAIL_USERNAME", "vero1@techopialabs.com"));
             $mail->Subject = "Password Reset Link";
             $mail->isHTML(true);
-			$mail->Body = ("Your password reset link is <a href='".$url."'>".$url."<a/>");
+			//$mail->Body = ("Your password reset link is <a href='".$url."'>".$url."<a/>");
+			$mail->Body = (view("mail")->with(array("title"=>"Password Reset","username"=>$user->username,"message"=>"Reset password confirmation","action"=>"Reset password","action_link"=>$url)));
             $mail->addAddress($user->email, "Recipient Name");
             $mail->send();
         } catch (phpmailerException $e) {

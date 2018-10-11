@@ -19,6 +19,302 @@
 	margin: 0;
 	color: #464646;
 	font-size: 16px;
+	font-Weight: 600;
+	margin-top: -18px;
+	border-top: 3px solid #FF9200;
+	margin-left: 55px;
+	margin-top: -14px;
+}
+.nobod {
+	border: none;
+}
+.dets12 {
+	padding: 0;
+	margin: 0;
+	color: #464646;
+	font-size: 16px;
+	font-Weight: 600;
+	margin-top: 34px;
+	position: relative;
+	
+}
+.block-row-21 {
+	text-align: center;
+	height: 85px;
+}
+.block-row-21 h2 {
+	font-size: 46px;
+	font-Weight: 200;
+}
+.cov .how-row-1 {
+	padding: 15px 0 0 0;
+	margin: 0;
+	overflow: hidden;
+}
+.cov .how-row-1 .how-col-collect-2 h5 {
+	padding: 0 0 5px 0;
+	margin: 0;
+	font-size: 23px;
+	font-Weight: 800;
+}
+.cov .how-row-1 .how-col-2 h5 {
+	padding: 0 0 5px 0;
+	margin: 0;
+	font-size: 23px;
+	font-Weight: 800;
+}
+.row11 ul li {
+	font-size: 17px;
+	color: #5b5b64;
+}
+.cov ul {
+	list-style-type: square;
+	padding: 20px;
+}
+.cov .how-row-1 .how-col-2 {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.cov .how-row-1 .how-col-collect-2 {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.bgofrow h1 {
+	font-size: 54px;
+	color:#fff;
+	font-Weight:700;
+}
+
+.bgofrow {
+	background: url(images/bgabout.png) repeat 100% 100% !important;
+	padding:45px 0px;
+}
+.sectionr {
+	padding: 35px 0px;
+}
+.sectionr hr {
+	max-width: 384px;
+	margin-top: 40px;
+}
+.sectionr h2 {
+	font-size: 46px;
+	font-Weight: 200;
+	max-width: 422px;
+	margin-top: 26px;
+}
+.sectionr p {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-Weight: 400;
+	color: #5b5b64;
+	line-height: 25px;
+	margin-top: 43px;
+}
+.ones h2 {
+	font-size: 46px;
+	font-Weight: 200;
+	max-width: 523px;
+	margin-top: 0px;
+}
+.ones p {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-Weight: 400;
+	color: #5b5b64;
+	line-height: 25px;
+	margin-top: 16px;
+}
+.cntr {
+	text-align: center;
+}
+.h2a {
+	font-size: 46px;
+	font-Weight: 200;
+
+	margin-top: 26px;
+}
+.bgbtmrow {
+	background: #F4F4F4;
+}
+.sectionv h5 {
+	font-size: 20px;
+	color: #F8911E;
+}
+.sectionv p {
+	font-size: 15px;
+	margin-top: 13px;
+}
+.sectionv div {
+	margin: 10px 0px;
+}
+.itemsul li {
+	font-size: 15px;
+	font-weight: bold;
+}
+.prods {
+	max-width: 50%;
+	display: inline-block;
+}
+	</style>
+<div class="container1 cov">
+    
+		<div class="body-content1">
+		<div class="bgofrow">
+			<div class="container text-center">
+				<h1>Services</h1>
+				
+			</div>
+				
+		</div>
+			<div class="container">
+				<div class="sectionr">
+					<div class="col-md-6 col-sm-12 col-lg-6">
+						<h2>VERO 1 provides six major services</h2>
+						
+						<p>Whether you are busy working professional who doesn’t have time to sit in traffic and run errands or a senior citizen who needs assistance with going to doctor’s appointments and grocery shopping, VERO 1 is the go-to app for all your errands and needs.</p>
+<ul class="itemsul">
+<li>-   Item purchase </li>
+<li>-   Package pick-up and delivery  </li>
+<li>-   Item return/exchange</li>
+<li>-   Ride-sharing  </li>
+<li>-   Eats and carry-out delivery</li>
+<li>-   Professional and specialized services</li>
+	</ul>				
+					</div>	
+					<div class="col-md-6 col-sm-12 col-lg-6 cntr">
+					
+						<img src="images/mob.png"/>
+					
+					</div>
+					<div class="clearfix"></div>
+					<hr>
+				</div>
+				
+				
+			
+			</div>	
+
+			<div class="bgbtmrow">
+			<div class="container">
+
+			<h2 class="text-center h2a">Our Values</h2>
+			<div class="sectionv">
+			<div class="col-md-6 col-lg-6 col-sm-12">
+				<div class="col-lg-2 col-md-2">
+					<img src="images/bas.png" />
+				</div>
+				<div class="col-lg-10 col-md-10">
+						<h5>ITEM PURCHASE</h5>
+						<p>Need to shop and get an item(s) delivered to your doorstep quickly?  No worries. VERO 1 lists millions of products from major big box retailers, grocery chains, pharmacies in the world including:</p>
+						<ul class="prods">
+							<li>Walmart</li>
+<li>Target</li>
+<li>Home Depot </li>
+<li>Lowes</li>
+<li>Best Buy</li>
+<li>Bed Bath & Beyond</li>
+<li>Office Depot-Office Max</li>
+<li>Staples</li>
+						
+						</ul>
+				<ul class="prods">	<li>	afeway </li>
+<li>Albertson’s</li>
+<li>Aldi</li>
+<li>Whole Foods</li>
+<li>Publix CVS </li>
+<li>Walgreens, </li>
+<li>Pet Supply Plus</li>
+<li>Pet Smart</li>
+</ul>
+
+<p>
+Instantly price compare, read product reviews, select the items you want, and place your purchase service request.  VERO 1 drivers will then go to the retailer, purchase your items, and deliver them to your doorstep within the hour.
+</p>
+				</div>
+				
+			</div>
+			<div class="col-md-6 col-lg-6 col-sm-12">
+				<div class="col-lg-2 col-md-2">
+					<img src="images/double.png" />
+				</div>
+				<div class="col-lg-10 col-md-10">
+						<h5>Integrity</h5>
+						<p>We do the right thing – especially when nobody is looking. We speak your mind and don’t defer to authority. We fight for what you think is right. We care about the impact your actions have on the world around you.</p>
+				</div>
+				
+			</div>
+				<div class="col-md-6 col-lg-6 col-sm-12">
+				<div class="col-lg-2 col-md-2">
+					<img src="images/arr.png" />
+				</div>
+				<div class="col-lg-10 col-md-10">
+						<h5>Resourcefulness</h5>
+						<p>We find ways to get things done; We make it  yourself if it doesn’t exist. We look to do things in new and better ways. We like to turn  your mind to challenges outside  your day job. We see the wood for the trees; We keep one eye on next to better prepare for now.</p>
+				</div>
+				
+			</div>
+				<div class="col-md-6 col-lg-6 col-sm-12">
+				<div class="col-lg-2 col-md-2">
+					<img src="images/fork.png" />
+				</div>
+				<div class="col-lg-10 col-md-10">
+						<h5>Curiosity</h5>
+						<p>We look past the superficial to focus on what really matters. We ask tough questions to ensure better outcomes. We challenge assumptions and expectations no matter the source. We approach challenges from unusual angles; We know the obvious ans your is rarely the best one.</p>
+				</div>
+				
+			</div>
+			
+				<div class="col-md-6 col-lg-6 col-sm-12">
+				<div class="col-lg-2 col-md-2">
+					<img src="images/house.png" />
+				</div>
+				<div class="col-lg-10 col-md-10">
+						<h5>Impact</h5>
+						<p>We’re always looking for opportunities to make a big difference. We seek the best possible returns when choosing where to invest  your time.  your colleagues know they can rely on We to do great work that makes a difference.</p>
+				</div>
+				
+			</div>
+				<div class="col-md-6 col-lg-6 col-sm-12">
+				<div class="col-lg-2 col-md-2">
+					<img src="images/own.png" />
+				</div>
+				<div class="col-lg-10 col-md-10">
+						<h5>Ownership</h5>
+						<p>We take responsibility for  your actions and decisions. We rise to the challenge quickly and easily; We do what it takes to make things happen. We’re grateful for the help of colleagues but We’ll do it  yourself where necessary. We know the buck stops with We; We like it that way.</p>
+				</div>
+				
+			</div>
+		
+			</div>
+			</div>
+			
+					  
+        </div>
+ </div>
+ 
+
+<style>
+.steps-wrap .steps.step2 li {
+	margin: 0;
+	display: block;
+	float: left;
+	width: 29%;
+	margin-bottom: 30px;
+	padding: 0 !important;
+	text-align: center;
+}
+	
+.dets {
+	padding: 0;
+	margin: 0;
+	color: #464646;
+	font-size: 16px;
 	font-weight: 600;
 	margin-top: -18px;
 	border-top: 3px solid #FF9200;
@@ -85,6 +381,9 @@
 }
 
 	</style>
+	
+	
+	
 <div class="container cov">
 		<div class="body-content">
 			<div class="container">
