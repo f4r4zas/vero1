@@ -62,11 +62,13 @@
                                 <a href="{{ URL::to('admin/createPage') }}" class="btn btn-primary pull-right">Create Pages</a>
                             </div>
                             <div class="content table-responsive table-full-width">
+
+
                                 <table class="table table-striped">
                                     <thead>
                                         <th>ID</th>
                                         <th>Page Name</th>
-                                        <th>Page Short Description</th>
+                                        <th>Page Slug</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </thead>
@@ -76,9 +78,25 @@
                                         <tr>
                                             <td><?php echo $usersData->_id; ?> </td>
                                             <td><?php echo $usersData->page_title; ?> </td>
-                                            <td><?php echo $usersData->page_short_desc; ?> </td>
-                                            <td><?php if(!empty($usersData->status)){ if($usersData->status == 1){ echo "Enable"; }else{ echo "Disable"; } } ?></td>
-                                            <td><input type="button" name="" class="btn btn-primary" value="action"> </td>
+                                            <td><?php if(!empty($usersData->page_slug)){ echo $usersData->page_slug; } ?> </td>
+                                            <td><?php if(!empty($usersData->status)){ if($usersData->status == 1){ echo "Enable"; }else{ echo "Disable"; } }else{ echo "Disable";  } ?></td>
+                                            <td>
+                                                   
+                                            
+                                            <form action="{{ route("edit-page") }}" method="post">
+                                                    {{ csrf_field() }}
+                                        <input type="hidden" name="page_slug" value="<?php echo $usersData->page_slug; ?>">
+                                                    <input type="submit" name="" class="btn btn-primary" value="Edit">
+                                            </form>
+                                                <p class="clearfix"></p> 
+                                            <form action="{{ route("remove-page") }}" method="post">
+                                                    {{ csrf_field() }}
+                                                    <input type="hidden" name="id" value="<?php echo $usersData->_id ?>">
+                                                    <input type="submit" name="" class="btn btn-danger" value="Remove">
+                                            </form>
+
+                                                
+                                             </td>
                                         </tr>
                                 <?php } ?>
 
@@ -92,5 +110,4 @@
             </div>
         </div>
 
-       
     @include("admin.footer")

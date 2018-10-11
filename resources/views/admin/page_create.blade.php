@@ -63,7 +63,14 @@
                             </div>
                             
 
-                         <form class="form-horizontal">
+                                  @if($trac == "update")
+                                    <form action="{{ route("update-page") }}" method="post" class="form-horizontal">
+                                  @else  
+                                    <form action="{{ route("insert-page") }}" method="post" class="form-horizontal">
+                                  @endif
+
+                             {{ csrf_field() }}
+
                           <div class="form-group">
                             <label for="page_title" class="control-label col-xs-4">Page Title</label> 
                             <div class="col-xs-8">
@@ -71,29 +78,80 @@
                                 <div class="input-group-addon">
                                   <i class="fa fa-address-card"></i>
                                 </div> 
-                                <input id="page_title" name="page_title" type="text" class="form-control" required="required">
+
+                                  @if($trac == "update")
+                                    
+                                    <input id="page_title" name="page_title" value="{{ $data->page_title }}" type="text" class="form-control" required="required">
+
+
+                                 @else  
+
+                                    <input id="page_title" name="page_title" value="{{ old("page_title") }}" type="text" class="form-control" required="required">                                    
+
+                                  @endif
+                                
                               </div>
                             </div>
                           </div>
                           <div class="form-group">
                             <label for="page_short_desc" class="control-label col-xs-4">Short Description</label> 
                             <div class="col-xs-8">
-                              <textarea id="page_short_desc" name="page_short_desc" cols="40" rows="5" required="required" class="form-control"></textarea>
+
+                                  @if($trac == "update")
+                                    
+                               <textarea id="page_short_desc" name="page_short_desc"  cols="40" rows="5" required="required" class="form-control">{{ $data->page_short_desc }}</textarea>
+
+                                   @else  
+
+                              <textarea id="page_short_desc" name="page_short_desc"  cols="40" rows="5" required="required" class="form-control">{{ old("page_short_desc") }}</textarea>                                    
+
+                                  @endif
+
+                              
                             </div>
                           </div>
                           <div class="form-group">
                             <label for="textarea1" class="control-label col-xs-4">Description</label> 
                             <div class="col-xs-8">
-                              <textarea id="textarea1" name="textarea1" cols="40" rows="5" class="form-control"></textarea>
+
+
+                                  @if($trac == "update")
+                                    
+                                    <textarea id="page_description"  name="page_description"  cols="40" rows="20" class="form-control">{{ $data->page_description }}</textarea>
+
+
+                                   @else  
+
+                              <textarea id="page_description"  name="page_description"  cols="40" rows="20" class="form-control">{{ old("page_description") }}</textarea>                                    
+
+                                  @endif
+
+                              
                             </div>
                           </div>
                           <div class="form-group">
                             <label for="status" class="control-label col-xs-4">Status</label> 
                             <div class="col-xs-8">
-                              <select id="status" name="status" class="select form-control" required="required">
-                                <option value="1">Enable</option>
-                                <option value="2">Disable</option>
+
+                                      @if($trac == "update")
+
+                                   <select id="status" name="status" class="select form-control" required="required">
+                                <option value="1" <?php if($data->status) { echo "selected"; }  ?> >Enable</option>
+                                <option value="0" <?php  if(!$data->status) { echo "selected"; }  ?> >Disable</option>
                               </select>
+
+
+                                   @else    
+
+                              <select id="status" name="status" class="select form-control" required="required">
+                                <option value="1" <?php if(old("status")) { echo "selected"; }  ?> >Enable</option>
+                                <option value="0" <?php  if(!old("status")) { echo "selected"; }  ?> >Disable</option>
+                              </select>
+
+                                  @endif
+
+
+                              
                             </div>
                           </div> 
                           <div class="form-group row">
@@ -101,6 +159,10 @@
                               <button name="submit" type="submit" class="btn btn-primary">Submit</button>
                             </div>
                           </div>
+
+                           @if($trac == "update")
+                        <input type="hidden" name="page_slug" value="{{ $data->page_slug  }}">
+                          @endif
                         </form>
 
 
@@ -112,3 +174,11 @@
 
        
     @include("admin.footer")
+    <script type="text/javascript">
+    
+     ClassicEditor
+            .create( document.querySelector( '#page_description' ) )
+            .catch( error => {
+                console.error( error );
+            } );    
+    </script>       
