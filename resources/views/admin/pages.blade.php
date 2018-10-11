@@ -88,7 +88,10 @@
                                         <input type="hidden" name="page_slug" value="<?php echo $usersData->page_slug; ?>">
                                                     <input type="submit" name="" class="btn btn-primary" value="Edit">
                                             </form>
-                                                <p class="clearfix"></p> 
+  
+                                                <a href="<?php echo URL::to($usersData->page_slug); ?>" target="_blank
+" class="btn btn-info">View</a>
+                                                <p class="clearfix"></p>
                                             <form action="{{ route("remove-page") }}" method="post">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="id" value="<?php echo $usersData->_id ?>">

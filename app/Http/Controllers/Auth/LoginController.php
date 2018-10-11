@@ -78,6 +78,7 @@ class LoginController extends Controller
             $mail->Password = env("MAIL_PASSWORD", "*jf]iW+CVpkj");
             $mail->setFrom(env("MAIL_USERNAME", "vero1@techopialabs.com"));
             $mail->Subject = "Password Reset Link";
+            
             $mail->isHTML(true);
 			//$mail->Body = ("Your password reset link is <a href='".$url."'>".$url."<a/>");
 			$mail->Body = (view("mail")->with(array("title"=>"Password Reset","username"=>$user->username,"message"=>"Reset password confirmation","action"=>"Reset password","action_link"=>$url)));
