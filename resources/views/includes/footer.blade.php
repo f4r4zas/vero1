@@ -43,6 +43,8 @@
                 <ul>
                     <li><a href="#"><img src="images/appstore-button.png"></a></li>
                     <li><a href="#"><img src="images/playstore-button.png"></a></li>
+					<li><a href="#"><img src="images/amz2.jpg"></a></li>
+					<li><a href="#"><img src="images/amz.jpg"></a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">

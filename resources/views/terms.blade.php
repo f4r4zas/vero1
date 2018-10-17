@@ -23,7 +23,7 @@
 	padding-left: 0px;
 }
 p, li {
-	font-size: 20px;
+	font-size: 15px;
 	margin: 10px 0px;
 	text-align: justify;
 }

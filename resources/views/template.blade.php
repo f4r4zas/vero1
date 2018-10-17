@@ -4,9 +4,9 @@
 @include("includes.full_header")
 </span>
 
-<div class="container">
+
 	<?php echo $content ?>	
-</div>
+
 
 
 <div id="body2">

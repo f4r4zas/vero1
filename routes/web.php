@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 
+
 Route::get('/driver-register', 'Registration@index');
 Route::get('/driver-register/{id}', 'Registration@index');
 
@@ -59,7 +60,7 @@ Route::get('/faq', 'Commons@faq')->name('home');
 Route::get('/how-it-works', 'Commons@how')->name('home');
 Route::get('/about-us', 'Commons@about');
 Route::get('/coverage', 'Commons@coverage');
-Route::get('/service', 'Commons@service');
+//Route::get('/service', 'Commons@service');
 Route::get('/terms', 'Commons@terms');
 Route::get('/help', 'Commons@help');
 Route::get('/pricing', 'Commons@pricing');
