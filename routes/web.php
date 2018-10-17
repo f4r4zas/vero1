@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'uses' => 'uses'], function(){
+
+
+});
+
 
 Route::get('/driver-register', 'Registration@index');
 Route::get('/driver-register/{id}', 'Registration@index');
