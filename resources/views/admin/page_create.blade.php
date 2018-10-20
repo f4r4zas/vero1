@@ -176,9 +176,6 @@
     @include("admin.footer")
     <script type="text/javascript">
     
- /*     ClassicEditor
-            .create( document.querySelector( '#page_description' ) )
-            .catch( error => {
-                console.error( error );
-            } ); */    
+CKEDITOR.replace( 'page_description' );
+    
     </script>       

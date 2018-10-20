@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'uses' => 'uses'], function(){
+
+
+});
+
 
 
 Route::get('/driver-register', 'Registration@index');
@@ -69,6 +74,8 @@ Route::get('/insurace', 'Commons@insurance');
 Route::get('/privacy', 'Commons@privacy');
 Route::get('/career', 'Commons@career');
 Route::get('/partner', 'Commons@partner');
+
+Route::get('/user_profile', 'Users@viewProfile');
 
 
 /* ====================================== ADMIN ====================================== */

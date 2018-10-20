@@ -217,7 +217,8 @@ margin: 0;
 	transition: .8s cubic-bezier(0,0,.39,1.03) opacity,transform .5s !important;
 }
 .item {
-	min-height: 509px;
+	min-height: 650px;
+	background-size: cover !important;
 }
 .container.mainpagetitle {
 

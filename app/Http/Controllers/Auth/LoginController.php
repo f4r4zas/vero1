@@ -60,12 +60,13 @@ class LoginController extends Controller
             //$url = env("APP_URL", "http://localhost/") . "/password/reset/" . $token; 
 			$url  = URL::to("/password/reset/" . $token);
             $this->sendPaswordResetEmail($user, $url);
-            return redirect()->back();
+            return redirect()->back()->with('status', ['Check your email for password reset link!']);
         }
-        dd("No user found");
+         return redirect()->back()->with('error', ['Invalid email address!']);
     }
 
     private function sendPaswordResetEmail($user, $url){
+		
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP(); // tell to use smtp

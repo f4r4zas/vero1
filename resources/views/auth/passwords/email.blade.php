@@ -10,9 +10,24 @@
                 <div class="card-header loginfont">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
+				<?php
+				
+				echo "<pre style='display:none'>";
+				print_r(session()->all());
+				
+				echo "</pre>";
+					
+			
+				?>
                     @if (session('status'))
                         <div class="alert alert-success">
-                            {{ session('status') }}
+                            {{ session('status')[0] }}
+                        </div>
+                    @endif
+ 
+					@if (session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error')[0] }}
                         </div>
                     @endif
 

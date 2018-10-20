@@ -67,9 +67,9 @@
                                     <thead>
                                         <th>ID</th>
                                         <th>Name</th>
-                                        <th>Salary</th>
-                                        <th>Country</th>
-                                        <th>City</th>
+                                        <th>Email</th>
+                                        <th>User type</th>
+                                        <th>Action</th>
                                     </thead>
                                     <tbody>
                                      

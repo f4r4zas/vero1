@@ -4,7 +4,7 @@
 @include("includes.full_header")
 </span>
 
-	<?php echo $content ?>	
+@include("profile-step1")
 
 <div id="body2">
     @include("includes.footer")
