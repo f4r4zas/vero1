@@ -41,10 +41,10 @@
             <div class="col-sm-2 footer-colum">
                 <h4>Get VERO 1 App</h4>
                 <ul>
-                    <li><a href="#"><img src="images/appstore-button.png"></a></li>
-                    <li><a href="#"><img src="images/playstore-button.png"></a></li>
-					<li><a href="#"><img src="images/amz2.jpg"></a></li>
-					<li><a href="#"><img src="images/amz.jpg"></a></li>
+                    <li><a href="#"><img src="{{ URL::to("images/appstore-button.png") }}"></a></li>
+                    <li><a href="#"><img src="{{ URL::to("images/playstore-button.png") }}"></a></li>
+					<li><a href="#"><img src="{{ URL::to("images/amz2.jpg") }}"></a></li>
+					<li><a href="#"><img src="{{ URL::to("images/amz.jpg") }}"></a></li>
                 </ul>
             </div>
             <div class="col-sm-2 footer-colum">
@@ -55,9 +55,9 @@
                     <li><a href="#">support@vero1.com</a></li>
                 </ul>
 				<ul class="social">
-				<li><a href="#" class=""><img src="images/fb.png"/></a>
-                   <a href="#" class=""><img src="images/tw.png"/></a>
-				<a href="#" class=""><img src="images/ins.png"/></a></li>
+				<li><a href="#" class=""><img src="{{ URL::to("images/fb.png") }}"/></a>
+                   <a href="#" class=""><img src="{{ URL::to("images/tw.png") }}"/></a>
+				<a href="#" class=""><img src="{{ URL::to("images/ins.png") }}"/></a></li>
 				
 				<ul>
             </div>
