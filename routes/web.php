@@ -77,6 +77,8 @@ Route::get('/partner', 'Commons@partner');
 
 Route::get('/user_profile', 'Users@viewProfile');
 
+Route::get('/test', 'Registration@test');
+
 
 /* ====================================== ADMIN ====================================== */
 

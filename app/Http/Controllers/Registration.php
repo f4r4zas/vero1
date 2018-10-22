@@ -62,7 +62,7 @@ class Registration extends Controller
          */
 
         //echo implode(",",$param);
-        print_r(http_build_query($param));
+        /*print_r(http_build_query($param));
 
         $urlDetails = 'http://ec2-54-174-240-101.compute-1.amazonaws.com:3000/register';
 
@@ -83,8 +83,16 @@ class Registration extends Controller
             return $returnData->data->_id;
         }else{
             return false;
-        }
+        }*/
        // return print_r(json_decode($urlData));
+
+
+        $client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+        $collection = $client->vero->users;
+        
+        $result = $collection->insertOne($param);
+
+        return $result->getInsertedId();
 
     }
 
@@ -119,7 +127,7 @@ class Registration extends Controller
             "street_address"=> $request->input("home_address"),
             "zip"=> $request->input("zip"),
             "gender"=> $request->input("gender"),
-            "password"=> $request->input("password"),
+            "password"=>  Hash::make($request->input("password")),
             "last_name"=> $request->input("last_name"),
             "first_name"=> $request->input("first_name"),
         );
@@ -132,18 +140,17 @@ class Registration extends Controller
 
        $insertId = $this->apiRegister($param);
         if($insertId){
-            $result = $request->all();
+           /* $result = $request->all();
             $result['password']  = Hash::make($result['password']);
-            //$result = $collection->insertOne(array("_id"=>new \MongoDB\BSON\ObjectId($insertId),$request));
             $result["_id"] =  new \MongoDB\BSON\ObjectId($insertId);
             $result["email"] = $request->input("userEmail");
-            $result = $collection->insertOne($result);
-            Session::put("register-id",$result->getInsertedId());
+            $result = $collection->insertOne($result);*/
+            Session::put("register-id",$insertId);
             return redirect(URL::to("/driver-register/2"));
 
         }else{
             Session::flash('message', 'Email already registered!');
-            return redirect(URL::to("/driver-register"));
+             return redirect(URL::to("/driver-register"));
         }
 
     }
@@ -229,5 +236,20 @@ class Registration extends Controller
             $message->from('vero1@techopialabs.com','sdasd');
         });
         echo "Basic Email Sent. Check your inbox.";
+    }
+
+    public function test(){
+     /*   $client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+$collection = $client->vero->users;
+
+ $param = array(
+            "user_type" => "driver",
+            "email" =>  "Email@aasd.com",
+            "country" => "USA",
+        );
+
+        $collection->insertOne($param);
+        
+*/
     }
 }

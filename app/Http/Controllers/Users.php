@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 use MongoDB\Client;
 use Illuminate\Support\Facades\Hash;
 use MongoId;
@@ -20,8 +21,27 @@ class Users extends Controller{
 		}
 	
 		function viewProfile(){
-			
+
+		$userData =  Auth::user();
+
+		print_r($userData);
+
+		
 		$data = array();
+
+		$locationData = new LocationData();
+
+        $states = $locationData->USStates();
+
+        $data['USStates'] = $states;
+
+        $client = new \MongoDB\Client("mongodb://ec2-54-174-240-101.compute-1.amazonaws.com:27017");
+        $collection = $client->vero->users;
+
+        $find = array('userEmail'=>$request->input("userEmail"));
+        $unique =  $collection->findOne($find);
+			
+		
 		$step = null;
 		if($step == null){
             $data["step"] = 0;

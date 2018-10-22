@@ -33,7 +33,7 @@ return [
 
     'connections' => [
 
-        'sqlite' => [
+        /*'sqlite' => [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
@@ -76,10 +76,10 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
-        ],
+        ],*/
        'mongodb' => [
             'driver'   => 'mongodb',
-            'host'     => env('DB_HOST', 'localhost'),
+            'host'     => env('DB_HOST', 'ec2-54-174-240-101.compute-1.amazonaws.com'),
             'port'     => env('DB_PORT', 27017),
             'database' => "vero",
             'username' => "",
