@@ -178,4 +178,5 @@
     
 CKEDITOR.replace( 'page_description' );
     
+    CKEDITOR.config.allowedContent = true
     </script>       
